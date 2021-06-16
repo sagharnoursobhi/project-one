@@ -1,0 +1,155 @@
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        background-color: #fff;
+        color: #555;
+        font-family: "Gotham", "Arial", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        text-rendering: optimizeLegibility;
+    }
+
+    header{
+        height: 74px;
+    }
+
+    /*header*/
+    .background{
+        background: linear-gradient(90.16deg, #00426F 102.15%, rgba(0, 66, 111, 0) 107.49%);
+    }
+
+    .main-box{
+        background-image:linear-gradient( 
+            186deg
+            , rgb(0 0 0 / 0%) 15.31%, rgb(0 0 0 / 82%) 67.37% ),
+            url('../imgs/card1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 70vh;
+    }
+
+    .main-box h1{
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .main-box p {
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
+    .custom-container-two p {
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 90%;
+        line-height: 38px;
+    }
+
+    .custom-container-two h3{
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 117%;
+        letter-spacing: -1.25641px;
+        color: #000000;
+    }
+
+    .custom-container-one h3{
+        font-family: Gotham;
+        font-size: 28px;
+        line-height: 120.1%;
+        letter-spacing: -1.25641px;
+        color: #000000;
+    }
+
+    .custom-container-one p {
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 38px;
+        letter-spacing: -0.502564px;
+        color: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.6;
+    }
+
+
+    .button{
+        width: 148px;
+        height: 36px;
+        border-radius: 26px;
+        color: #0067AD;
+        border: 0;
+        background: #fff;
+        box-shadow: 0px 13px 16px 7px rgb(0 0 0 / 13%);
+    }
+
+    /*footer*/
+    .footer-two {
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background: linear-gradient(
+            225.52deg,
+            #04080a 0.45%,
+            rgba(3, 15, 19, 0.982162) 45.25%
+        );
+        height: 700px;
+    }
+
+    .gradient {
+        background: #005c9b;
+        background: -webkit-linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
+        background: -moz-linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
+        background: linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Gotham;
+        font-size: 42px;
+        line-height: 49px;
+        letter-spacing: -1.05538px;
+    }
+
+    .footer-two h1 {
+        font-family: Gotham;
+        font-size: 32px;
+        line-height: 37px;
+        letter-spacing: -1.05538px;
+    }
+
+    .footer-two p {
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: -0.376923px;
+        color: #979797;
+    }
+
+    .footer-two img {
+        width: 200px;
+        margin-top: 50px;
+        max-width: 100%;
+        max-height: 100%;
+    }

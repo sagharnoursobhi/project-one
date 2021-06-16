@@ -1,0 +1,80 @@
+    .second{
+        background: #FFFFFF;
+        box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+        border-radius: 25px;
+    }
+
+    .modal-window-first{
+        border-radius: 31px;
+    }
+
+    .modal h5{
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .modal h3{
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .modal-window-second{
+        background: #FFFFFF;
+        box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+        border-radius: 25px;
+        width: 274.34px;
+        height: 424.57px;
+    }
+
+    .input__one{
+        border: 1px solid #EBEBEB;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 1em;
+    }
+
+    .input__two{
+        border: 1px solid #EBEBEB;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 1em;
+    }
+
+    /* .input__two::placeholder{
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6%;
+        line-height: 12px;
+        letter-spacing: -0.376923px;
+        color: rgba(0, 0, 0, 0.5);
+    }*/
+
+    .modal-window-second .second-btn{
+        background: #0067AD;
+        border-radius: 29px;
+        font-family: Open Sans;
+        font-weight: 300;
+        font-size:120%;
+        line-height: 177.04%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 1em;
+        height: 42px;
+        width: 100px;
+        border: 0;
+        margin-right: auto;
+        height: 40px;
+        width: 120px;
+        max-width: 100%;
+    }

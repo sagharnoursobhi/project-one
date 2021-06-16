@@ -1,0 +1,138 @@
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        background-color: #fff;
+        color: #555;
+        font-family: "Gotham", "Arial", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        text-rendering: optimizeLegibility;
+    }
+    header nav {
+        background: linear-gradient(90.16deg, #00426F 102.15%, rgba(0, 66, 111, 0) 107.49%);
+    }
+    header{
+        height: 74px;
+    }
+    /*section-one*/
+    .text-box-one{
+        background-image:linear-gradient( 
+            186deg
+            , rgb(0 0 0 / 0%) 15.31%, rgb(0 0 0 / 82%) 67.37% ),
+            url('../imgs/contactUs.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 90vh;
+    }
+
+    .text-box-one p {
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.502564px;
+        color: #FFFFFF;
+        margin-bottom: 3em;
+    }
+
+    .btn-head {
+        color:#0063B1;
+        font-weight:600;
+        background-color: #fff;
+        border-radius: 200px;
+        border: 1px solid #fff;
+        word-spacing: 4px;
+        text-decoration: none;
+        font-size:90%;
+        text-align: center;
+        padding: 10px 40px;
+        font-family: Open Sans;
+    }
+    .text-box-one h1 {
+        font-family: Gotham;
+        font-size: 250%;
+        line-height: 59px;
+        text-align: center;
+        letter-spacing: -1.25641px;
+        color: #FFFFFF;
+        margin-top: 5em;
+    }
+    .text-box-one ul{
+        margin-bottom: 11em;
+    }
+
+    /*footer*/
+    .footer{
+        background: linear-gradient(225.52deg, #001E27 0.45%, rgba(3, 15, 19, 0.982162) 45.25%);
+        height: 551px;
+    }
+
+    .footer h1 > span{
+        background: #005c9b;
+        background: -webkit-linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
+        background: -moz-linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
+        background: linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Gotham;
+        font-size: 42px;
+        line-height: 49px;
+        letter-spacing: -1.05538px;
+    }
+
+    .footer h1{
+        font-family: Gotham;
+        font-size: 210%;
+        line-height: 49px;
+        letter-spacing: -1.05538px;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .footer .part1{
+        margin-top: 2em;
+        margin-left: 2em;
+    }
+    .part1 p{
+        width: 1070.48px;
+        height: 1px;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.1;
+        margin-top: 2em;
+    }
+
+    .part2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        align-items: end;
+    }
+
+    .part2 .p1{
+        font-family: Gotham;
+        font-size: 15px;
+        line-height: 75%;
+        color: #fff;
+    }
+
+    .part2 .p2{
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: -0.376923px;
+        color: #979797;
+    }
+
