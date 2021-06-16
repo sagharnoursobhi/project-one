@@ -52,7 +52,17 @@
         line-height: 80px;
         letter-spacing: -2.01026px;
     }
-
+    /*section-one*/
+    .section-one .extra{
+        margin-bottom: 3em;
+        padding: 10em;
+    }
+    .section-one img{
+        margin-top: 2em;
+        display: flex;
+        border-bottom-left-radius: 80px;
+    }
+    /*carousel*/
     .custom-carousel{
         background-repeat: no-repeat;
         background-size: cover;
