@@ -61,15 +61,17 @@
         letter-spacing: 1px;
         color: #fff;
         mix-blend-mode: normal;
+        display: block;
     }
 
     .hero-text-box h1 {
         font-family: Gotham;
-        font-size: 80px;
+        font-size: 200%;
         line-height: 80px;
         letter-spacing: -2.01026px;
         margin-bottom: 4rem;
         color: #FFFFFF;
+        display: block;
     }
 
     .bottom-nav {

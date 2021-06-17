@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="plugins/bootstrap-5.0.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/fontawesome-free-5.15.3-web 2/css/all.min.css">
     <link rel="stylesheet" href="plugins/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/owl/owl.theme.default.min.css">
     <link rel="stylesheet" href="resources/css/aboutUs.css">
     <link rel="stylesheet" href="resources/css/navbar.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
     <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+
 </head>
 <body>
   <header>
@@ -35,13 +37,13 @@
     </header>
     <div class="container-fluid" style="width: 100%; max-width: 100%; max-height: 100%;">
       <div class="row main-box d-flex flex-column justify-content-center align-items-end">
-          <h2 class="text-end text-white">You’re in good hands</h2>
+          <h2 class="text-center text-white">You’re in good hands</h2>
           <p class="text-center text-white">Läs mer om vårt företag</p>
       </div>
     </div><!--section-one-->
     <div class="container-fluid section-one">
       <div class="row">
-        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 d-flex flex-column align-items-center mw-100 extra"">
+        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 d-flex flex-column mw-100 extra">
           <h3 class="text-end">Vår affärsidé</h3>
           <p>Vi erbjuder kunden en total lösning där vi tillhandahåller samtliga tjänster under samma tak. Vi har många års erfarenhet och omfattande kunskap inom byggnation, städning, styling och flytt. Därmed behöver du som kund endast lämna över ansvaret till oss så ser vi till att du får bästa möjliga resultat för uppdraget. Vi använder oss av nyteknik i kombination med mångårig erfarenhet ligger till grunden för våra framgångar.  
           </p>
@@ -50,18 +52,17 @@
           <h3>Begär en kostnadsfri offert</h3>
           <p>Med tank på variationen på tjänster vi erbjuder tar vi gärna ett förutsättningslöst möte för att diskutera ett eventuellt samarbete. Vi är säkra på att vi kan offerera det bästa alternativet för er oavsett jobb. Tveka därför inte att ta kontakt med oss för jobb inom Göteborg med omnejd.</p>
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 p-0">
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 ">
           <img src="resources/imgs/aboutUs.jpg" alt="about-us">
         </div>
       </div>
     </div>
     <!--section-two-carousel-->
     <div class="container-fluid custom-carousel">
-      <div class="row d-flex flex-column justify-content-center align-items-center section-two">
+      <div class="row section-two">
           <h1 class="text-white text-center">Hitta den perfekta tjänsten för dina behov.</h1>
       </div>
-      <div class="row">
-        <div class="wrapper">
+        <div class="row wrapper">
           <div class="owl-carousel">
             <div class="card card-1 d-flex justify-content-center flex-column align-items-center">
               <img src="resources/imgs/card1.png" alt="">
@@ -99,7 +100,6 @@
               <div></div>
               <p class="text-center">Vi tar hand om hela ditt badrum, från att ta ner duschdraperiet tills att du hänger in handduken.</p>
             </div>
-        </div>
       </div>
       </div>
     </div>
@@ -131,8 +131,6 @@
         margin:10,
         loop:true,
         autoplay:false,
-        autoplayTimeout:2000,
-        autoplayHoverPause:false, 
         responsive:{
           0:{
             items:1,
@@ -143,8 +141,8 @@
             nav:false
           },
           1000:{
-            items:2,
-            nav:false
+            items:3,
+            nav:true
           }       
         },
     });

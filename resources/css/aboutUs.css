@@ -56,11 +56,14 @@
     .section-one .extra{
         margin-bottom: 3em;
         padding: 10em;
+        align-items: end;
     }
     .section-one img{
         margin-top: 2em;
         display: flex;
         border-bottom-left-radius: 80px;
+        height:36em ;
+        float: right;
     }
     /*carousel*/
     .custom-carousel{
@@ -119,7 +122,6 @@
       .owl-carousel .card {
         margin: 20px 0;
         border-radius: 25px;
-        width: 400px;
       }
     
       .card img{
@@ -203,3 +205,19 @@
         max-width: 100%;
         max-height: 100%;
     }
+
+.owl-dots {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
