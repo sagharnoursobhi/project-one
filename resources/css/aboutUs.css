@@ -1,0 +1,302 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        background-color: #fff;
+        color: #555;
+        font-family: "Gotham", "Arial", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        text-rendering: optimizeLegibility;
+    }
+    
+    .main-nav a {
+        font-size: 96%;
+    }
+
+    header nav {
+        background: linear-gradient(90.16deg, #00426F 102.15%, rgba(0, 66, 111, 0) 107.49%);
+    }
+
+    header{
+        height: 74px;
+    }
+
+    .main-box{
+        background-image:linear-gradient( 
+            186deg
+            , rgb(0 0 0 / 0%) 15.31%, rgb(0 0 0 / 82%) 67.37% ),
+            url('../imgs/imageHeader.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 70vh;
+    }
+
+    .main-box h2{
+        font-family: Gotham;
+        font-size: 42px;
+        line-height: 80px;
+        letter-spacing: -2.01026px;
+        font-weight: lighter;
+    }
+
+    .main-box p {
+        font-family: Gotham;
+        font-size: 100%;
+        line-height: 80px;
+        letter-spacing: -2.01026px;
+    }
+    /*section-one*/
+   .section-one .extra-one{
+        padding: 41px;
+    }
+    .section-one img{
+        display: flex;
+        border-bottom-left-radius: 80px;
+        height: 642px;
+        width: 496px;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        border-bottom-left-radius: 80px;
+    }
+    .section-one .extra-two{
+        padding: 0;
+        margin: 0;
+        position: relative;
+        margin-bottom: 7em;
+    }
+
+    .section-one .extra-three{
+        padding: 41px;
+    }
+    /*carousel*/
+    .custom-carousel{
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background: #023151;
+        height: 700px;
+        width: 100%;
+        margin-top: 5em;
+    }
+
+    .custom-carousel h1{
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 117%;
+        letter-spacing: -1.25641px;
+        margin-top: 1em;
+    }
+
+    .card h2{
+        font-family: Gotham;
+        font-size: 110%;
+        line-height: 26px;
+        letter-spacing: -0.603077px;
+        color: #000000;
+    }
+
+    .card p{
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.5px;
+        color: #000000;
+        opacity: 0.5;
+        padding: 0 11px;
+    }
+
+    .section-two-extra{
+        background: #FFFFFF;
+        box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+        border-radius: 25px;
+    }
+
+    .wrapper{
+        width: 100%;
+      }
+      .wrapper .owl-carousel{
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 30px;
+      }
+    
+      .owl-carousel .card {
+        margin: 20px 0;
+        border-radius: 25px;
+      }
+    
+      .card img{
+        width: 100%;
+        background: white;
+        width: 100%;
+        display: flex;
+        border-radius:26px 26px 0 0;
+      }
+      .owl-dot{
+        height: 15px;
+        width: 45px;
+        border: 2px solid #0072bc!important;
+        border-radius: 25px;
+        outline: none;
+        margin: 0 5px;
+        transition: all 0.3 ease;
+      }
+    
+      .owl-dot:hover,.owl-dot:active{
+        background: white!important;
+      }
+      .owl-nav button span {
+          font-size: xx-large;
+      }
+      .owl-dots{
+        align-items: center;
+        margin-top: 40px;
+      }
+
+      .card div{
+        border-bottom: 1px solid #e4e4e4;
+        padding-bottom: 13px;
+        margin-bottom: 23px;
+        width: 100%;
+      }
+
+      .footer-two {
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background: linear-gradient(
+            225.52deg,
+            #04080a 0.45%,
+            rgba(3, 15, 19, 0.982162) 45.25%
+        );
+        height: 700px;
+    }
+
+    .gradient {
+        background: #005c9b;
+        background: -webkit-linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
+        background: -moz-linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
+        background: linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Gotham;
+        font-size: 42px;
+        line-height: 49px;
+        letter-spacing: -1.05538px;
+    }
+
+    .footer-two h1 {
+        font-family: Gotham;
+        font-size: 32px;
+        line-height: 37px;
+        letter-spacing: -1.05538px;
+    }
+
+    .footer-two p {
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: -0.376923px;
+        color: #979797;
+    }
+
+    .footer-two img {
+        width: 200px;
+        margin-top: 50px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+.owl-dots {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+@media only screen and (max-width:504px) {
+    .section-one img{
+        width: 15em;
+        height: 22em;
+    }
+    
+  }
+
+  @media only screen and (max-width:767px) {
+    .section-one img{
+        height: 620px!important;
+        width: 486px!important;
+    }
+    .section-one .media{
+        margin-top: 23em!important;
+    }
+    /*.heading-carousel{
+        font-size: 33px!important;
+    }*/
+    .custom-carousel{
+        height: 1000px!important;
+    }
+    
+  }
+
+  @media only screen and (max-width:411px) {
+    .section-one img{
+        height: 544px!important;
+        width: 322px!important;
+    }
+    .section-one .media {
+        margin-top: 18em!important;
+    }
+    .custom-carousel {
+        height: 650px!important;
+    }
+
+    .section-one .media {
+        margin-top: 25em!important;
+    }
+    .section-one .heading-carousel{
+        font-weight: normal!important;
+        font-size: 30px!important;
+        letter-spacing: 2px!important;
+    }
+
+     .heading-carousel h1 {
+        font-size: 20px!important;
+        line-height: 35px!important;
+        letter-spacing: 2px!important;
+        font-weight: 200!important;
+    }
+    .owl-dots {
+        margin-top: 27px!important;
+    }
+    .card h1 {
+        font-family: Metropolis!important;
+        font-style: normal!important;
+        font-weight: normal!important;
+        font-size: 22px!important;
+        line-height: 117%!important;
+    }
+}

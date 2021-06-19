@@ -1,0 +1,118 @@
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .text-black{
+    color: black;
+  }
+  nav{
+    padding: 0 2rem;
+    position: relative;
+    justify-content: space-between;
+    min-height: 20vh;
+    height: 0rem;
+    overflow-y: hidden;
+    transition: height 1s cubic-bezier(0.44, 0.02, 0.47, 0.96);
+}
+  .nav-a img{
+    width: 91px;
+  }
+
+  nav .social{
+    padding: 1.4rem 0;
+  }
+
+  nav .social i{
+    padding: 0.2rem;
+  }
+
+  nav .nav-brand a{
+    font-size: 1.6rem;
+    display: block;
+    padding: 1rem 0;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  nav .nav-items{
+    list-style-type:none;
+    margin: 0;
+  }
+  nav .nav-items .nav-a{
+    padding: 1.3rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  nav .toggle-collapse{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+  }
+
+  nav .toggle-collapse .collapse-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.4rem 4rem;
+  }
+
+  nav .toggle-collapse .collapse-icons i{
+    font-size: 1.4rem;
+  }
+
+  /*css for making hamburger menu clickable*/
+  .collapse{
+    height: 30rem;
+  }
+  /*end*/
+  @media only screen and (max-width:800px) {
+    nav .nav-items{
+      flex-direction: column;
+    }
+    nav{
+      flex-direction: column!important;
+      display: block!important;
+    }
+    nav .toggle-collapse{
+      display: initial;
+    }
+  }
+
+  .bottom-nav button:link {
+    color:#0063B1;
+    font-weight:600;
+    background-color: #fff;
+    border-radius: 200px;
+    border: 1px solid #fff;
+    word-spacing: 4px;
+    text-decoration: none;
+    font-size:90%;
+    text-align: center;
+    padding: 10px 40px;
+    font-family: Open Sans;
+}
+
+  .bottom-nav button:hover {
+      color: #3498db;
+      transform:color 0.2s, color 0.2s; ;
+  }
+
+  
+  .nav-a a:link , a:visited{
+      font-size: 75%;
+      text-decoration: none;
+      color: #fff;
+      transition: 300ms ease-out;
+      font-weight: 300;
+  }
+
+  /*.nav-a a:{
+      font-size: 75%;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+  }*/
