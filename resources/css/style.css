@@ -1,5 +1,5 @@
     * {
-        margin: 0;
+        /*margin: 0;*/
         padding: 0;
         box-sizing: border-box;
     }
@@ -67,7 +67,7 @@
         display: block;
     }
 
-    .hero-text-box h1 {
+     h1 .hero-text-box{
         font-family: Gotham;
         font-size: 400%!important;
         line-height: 90px;
@@ -251,6 +251,7 @@
         font-family: Gotham;
         font-size: 110%;
         line-height: 26px;
+        margin-top: 17px;
         letter-spacing: -0.603077px;
         color: #000000;
         align-items: center;
@@ -334,7 +335,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: end;
-        margin-left: 100px;
+        /* margin-left: 100px; */
         height: 900px;
     }
 
@@ -534,7 +535,6 @@
     }
 
     .section-two-extra{
-        background: #FFFFFF;
         box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
         border-radius: 25px;
     }
@@ -569,6 +569,17 @@
         margin: 0 5px;
         transition: all 0.3 ease;
       }
+
+      .owl-nav {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+      }
     
       .owl-dot:hover,.owl-dot:active{
         background: white!important;
@@ -576,9 +587,16 @@
       .owl-nav button span {
           font-size: xx-large;
       }
-      .owl-dots{
+      .owl-dot{
         align-items: center;
         margin-top: 40px;
+        color: inherit;
+        border: none;
+        padding: 0!important;
+        font: inherit;
+        height: 26px!important;
+        width: 26px!important;
+        border-radius: 50%!important;
       }
 
       .card div{
@@ -590,11 +608,14 @@
 
       @media only screen and (max-width:1234px) {
         .arrow-footer{
-            margin-left: 8em;
-            margin-top: 9em;
+            /* margin-left: 8em;
+            margin-top: 9em; */
         }
         .hero-text-box{
-            margin-left: 9em;
+/*            margin-left: 9em;*/
+        }
+        .hero-text-box h1 {
+            font-size: 100%;
         }
         .linear-two{
             margin-top: 87px;
@@ -612,10 +633,10 @@
       @media only screen and (max-width:960px) {
         .extra-one{
             padding: 01em 4em;
-            margin-right: 3em;
+            /* margin-right: 3em; */
         }
         .hero-text-box{
-            margin-left: 9em;
+            /*margin-left: 9em;*/
         }
         .linear-two{
             margin-top: 87px;
@@ -640,6 +661,20 @@
             line-height: 75px!important;
             letter-spacing: 4px!important;
             font-weight: normal!important;
+        }
+        .extra-one h2{
+            font-size: 25px;
+            line-height: 27px!important;
+            letter-spacing: 2px!important;
+            font-weight: normal!important;
+        }
+        .extra-one p{
+            font-size: 12px!important;
+        }
+
+        .owl-nav {
+            left: -25px!important;
+            right: -25px!important;
         }
         
       }

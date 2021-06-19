@@ -22,7 +22,7 @@
     }
 
     header{
-        height: 74px;
+        height: 95px;
     }
 
     .main-box{
@@ -160,10 +160,13 @@
       .owl-nav button span {
           font-size: xx-large;
       }
-      .owl-dots{
+      /*.owl-dots{
         align-items: center;
         margin-top: 40px;
-      }
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+      }*/
 
       .card div{
         border-bottom: 1px solid #e4e4e4;
@@ -221,21 +224,26 @@
         max-height: 100%;
     }
 
-.owl-dots {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-.owl-nav {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff;
-}
+    .owl-dots {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .owl-dots button{
+        display: flex!important;
+        width: 26px!important;
+        height: 26px!important;
+    } 
+    .owl-nav {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+    }
 
 @media only screen and (max-width:504px) {
     .section-one img{
@@ -258,6 +266,10 @@
     }*/
     .custom-carousel{
         height: 1000px!important;
+    }
+    .owl-dots{
+        margin-top:16px!important;
+    
     }
     
   }
@@ -292,6 +304,7 @@
     .owl-dots {
         margin-top: 27px!important;
     }
+
     .card h1 {
         font-family: Metropolis!important;
         font-style: normal!important;
@@ -299,4 +312,8 @@
         font-size: 22px!important;
         line-height: 117%!important;
     }
+}
+
+@media only screen and (max-width:411px) {
+
 }

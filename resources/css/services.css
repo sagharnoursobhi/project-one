@@ -19,7 +19,7 @@
     }
 
     header{
-        height: 74px;
+        height: 95px;
     }
 
     .main-box{
@@ -70,6 +70,11 @@
         line-height: 117%;
         letter-spacing: -1.25641px;
         color: #000000;
+    }
+
+    .box-shadow{  
+        box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+        border-radius: 25px;
     }
 
     .custom-container-one h3{
@@ -160,7 +165,7 @@
     }
 
     .owl-dot:hover,.owl-dot:active{
-        background: gray!important;
+        background: gray !important;
       }
 
     .owl-nav {
@@ -168,6 +173,16 @@
         top: 50%;
         left: 0;
         right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #0000;
+    }
+    .nav-exclude .owl-nav  {
+        position: absolute;
+        top: 50%;
+        left: -30px;
+        right: -30px;
         display: flex;
         align-items: center;
         justify-content: space-between;

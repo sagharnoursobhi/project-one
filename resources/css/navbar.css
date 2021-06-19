@@ -10,7 +10,7 @@
     padding: 0 2rem;
     position: relative;
     justify-content: space-between;
-    min-height: 20vh;
+    min-height: 33vh;
     height: 0rem;
     overflow-y: hidden;
     transition: height 1s cubic-bezier(0.44, 0.02, 0.47, 0.96);
