@@ -1,5 +1,5 @@
 /*carousel*/
-.image-two{
+/*.image-two{
     display: flex;
     border-top-left-radius: 26px;
     border-top-right-radius: 26px;
@@ -69,7 +69,7 @@
     background: transparent;
     border: 0;
     cursor: pointer;
-}*/
+}
 
 .carousel__btn i{
     width: 12px;
@@ -77,7 +77,7 @@
 
 /*.carousel__btn--left{
     left: -40px;
-}*/
+}
 .carousel__btn--right{
     right: -40px;
 }
@@ -140,7 +140,7 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-/*test*/
+/*test
 .card-box {
     transform: scale(1.5);
     transition: transform 0.5s;
@@ -196,4 +196,4 @@
     border-bottom: 1px solid #e4e4e4;
     padding-bottom: 13px;
     margin-bottom: 23px;
-    }
+    }*/

@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.1">
         <link rel="stylesheet" href="plugins/bootstrap-5.0.1-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="plugins/fontawesome-free-5.15.3-web 2/css/all.min.css">
+        <link rel="stylesheet" href="plugins/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="plugins/owl/owl.theme.default.min.css">
         <link rel="stylesheet" href="resources/css/style.css" />
         <link rel="stylesheet" href="resources/css/navbar.css">
         <link rel="stylesheet" href="resources/css/modal.css">
@@ -34,19 +36,23 @@
               </nav>
               <!--end of new navbar-->
 
-            <div class="hero-text-box">
-                <h1 class="topic">Beautiful homes made for you</h1>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit</p>
-                <ul class="bottom-nav">
-                    <li><button type="button" class="btn-head btn1" id="hello">Ringa oss</button></li>
-                    <li><button type="button" id="open-btn" class="btn-head">Maila oss</button></li>
-                </ul>
+            <div class="hero-text-box container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10 extra">
+                        <h1 class="topic">Beautiful homes made for you</h1>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit</p>
+                        <ul class="bottom-nav">
+                            <li><button type="button" class="btn-head btn1" id="hello">Ringa oss</button></li>
+                            <li><button type="button" id="open-btn" class="btn-head">Maila oss</button></li>
+                        </ul>
+                        <div class="arrow-footer d-flex justify-content-end align-items-center">
+                            <a href="#contact" ><i class="fas fa-arrow-down text-white"></i></a>
+                            <a href="#contact"><p class="text-white">Få reda på mer</p></a>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="arrow-footer">
-                <a class="text-danger" href="">ali</a>
-                <p class="text-white">Få reda på mer</p>
-            </div>
         </header>
         <div class="container-fluid h-auto mw-100 mh-100 section-one"><!--section-one-->
             <div class="row">
@@ -68,66 +74,70 @@
                         Vi erbjuder alla tjänster för dina behov.
                 </p>
             </div>
-            <div class="row justify-content-lg-around d-flex align-items-center" style="margin-top: 100px;">
-                <div class="col-3 extra-two p-0" style="margin-right:40px;">
-                        <figure class="item-zoom">
-                            <img class="image-two"  src="resources/imgs/card1.png" alt="first-card" width="100%">
-                            <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
-                            <div></div>
-                            <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
-                            </p>
-                        </figure>
-                    
-                </div>
-                <div class="col-3 extra-two p-0" style="margin-right:40px;">
-                        <figure class="item-zoom">
-                            <img class="image-two"  src="resources/imgs/card3.png" alt="first-card" width="100%">
-                            <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
-                            <div></div>
-                            <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
-                            </p>
-                        </figure>
-                </div>
-                <div class="col-3 extra-two p-0">
-                    <figure class="item-zoom">
-                        <img class="image-two"  src="resources/imgs/card4.png" alt="first-card" width="100%">
-                        <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
-                        <div></div>
-                        <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
-                        </p>
-                    </figure>
+            <div class="wrapper">
+                <div class="owl-carousel">
+                    <div class="row justify-content-center d-flex align-items-center" style="margin-top:34px;">
+                        <div class="col-2 extra-two p-0" style="margin-right:40px;">
+                                <figure class="item-zoom">
+                                    <img class="image-two"  src="resources/imgs/card1.png" alt="first-card" width="100%">
+                                    <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
+                                    <div></div>
+                                    <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
+                                    </p>
+                                </figure>
+                            
+                        </div>
+                        <div class="col-2 extra-two p-0" style="margin-right:40px;">
+                                <figure class="item-zoom">
+                                    <img class="image-two"  src="resources/imgs/card3.png" alt="first-card" width="100%">
+                                    <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
+                                    <div></div>
+                                    <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
+                                    </p>
+                                </figure>
+                        </div>
+                        <div class="col-2 extra-two p-0">
+                            <figure class="item-zoom">
+                                <img class="image-two"  src="resources/imgs/card4.png" alt="first-card" width="100%">
+                                <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
+                                <div></div>
+                                <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
+                                </p>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center d-flex align-items-center p-0" style="margin-top: 100px; position: relative;">
+                        <div class="col-2 extra-two p-0 " style="margin-right:40px;">
+                            <figure class="item-zoom">
+                                <img class="image-two"  src="resources/imgs/card5.png" alt="first-card" width="100%">
+                                <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
+                                <div></div>
+                                <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
+                                </p>
+                            </figure>
+                        </div>
+                        <div class="col-2 extra-two p-0" style="margin-right:40px;">
+                            <figure class="item-zoom">
+                                <img class="image-two"  src="resources/imgs/card6.png" alt="first-card" width="100%">
+                                <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
+                                <div></div>
+                                <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
+                                </p>
+                            </figure>
+                        </div>
+                        <div class="col-2 extra-two p-0 ">
+                            <figure class="item-zoom">
+                                <img class="image-two"  src="resources/imgs/card2.png" alt="first-card" width="100%">
+                                <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
+                                <div></div>
+                                <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
+                                </p>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row justify-content-lg-around d-flex align-items-center p-0" style="margin-top: 100px; position: relative;">
-                <div class="col-3 extra-two p-0 " style="margin-right:40px;">
-                    <figure class="item-zoom">
-                        <img class="image-two"  src="resources/imgs/card5.png" alt="first-card" width="100%">
-                        <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
-                        <div></div>
-                        <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
-                        </p>
-                    </figure>
-                </div>
-                <div class="col-3 extra-two p-0" style="margin-right:40px;">
-                    <figure class="item-zoom">
-                        <img class="image-two"  src="resources/imgs/card6.png" alt="first-card" width="100%">
-                        <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
-                        <div></div>
-                        <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
-                        </p>
-                    </figure>
-                </div>
-                <div class="col-3 extra-two p-0 ">
-                    <figure class="item-zoom">
-                        <img class="image-two"  src="resources/imgs/card2.png" alt="first-card" width="100%">
-                        <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
-                        <div></div>
-                        <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
-                        </p>
-                    </figure>
-                </div>
-            </div>
-        </div>
+        </div><!--section two-->
         <div class="container-fluid"><!--section-three-->
             <div class="row section-three position-relative">
                 <div class="col-6 d-flex justify-content-center align-items-start flex-column">
@@ -143,7 +153,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid footer-one">
+        <div class="container-fluid footer-one" id="contact">
             <div class="row d-flex flex-column justify-content-center align-items-center position-relative">
                 <div class="linear-two"></div>
                 <h1 class="text-white text-center" style="margin-top: 100px;">Kontakt</h1>
@@ -217,7 +227,34 @@
        <script src="plugins/jquery/jquery-3.5.1.min.js"></script>
        <script src="plugins/fontawesome-free-5.15.3-web 2/js/all.min.js"></script>
        <script src="plugins/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
+       <script src="plugins/owl/owl.carousel.min.js"></script>
        <script src="resources/js/modal.js"></script>
-       <script src="resources/js/carousel.js"></script>
+       <script>
+            $('.owl-carousel').owlCarousel({
+                margin:10,
+                loop:true,
+                autoplay:false,
+                MouseEvent:false,
+                responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                567:{
+                    items:1,
+                    nav:true
+                },  
+                700:{
+                    items:1,
+                    nav:true
+                },
+                1000:{
+                    items:3,
+                    nav:true
+                }
+    
+                }
+            });
+       </script>
     </body>
     </html>

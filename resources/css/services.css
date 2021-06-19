@@ -158,6 +158,11 @@
         align-items: center !important;
         justify-content: center !important;
     }
+
+    .owl-dot:hover,.owl-dot:active{
+        background: gray!important;
+      }
+
     .owl-nav {
         position: absolute;
         top: 50%;

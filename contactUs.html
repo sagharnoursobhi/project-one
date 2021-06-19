@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="plugins/fontawesome-free-5.15.3-web 2/css/all.min.css">
     <link rel="stylesheet" href="resources/css/contact.css">
     <link rel="stylesheet" href="resources/css/navbar.css">
+    <link rel="stylesheet" href="resources/css/modal.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
     <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
     <title>contact-us</title>
@@ -49,16 +50,16 @@
                 <h1>Make your dreams a
                     <span>reality</span>
                 </h1>
-                <p></p>
+                <div></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center" style="margin-top: 3em;">
+        <div class="row media_row">
+            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center media_1" style="margin-top: 3em;">
                 <i class="fab fa-facebook-f text-white" style="margin-right: 1.5em;"></i>
                 <i class="fab fa-twitter text-white"></i>
                 <i class="fab fa-instagram text-white" style="margin-left: 1.5em;"></i>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 part2 d-flex flex-column justify-content-center align-items-md-start mt-md-5">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 part2 d-flex flex-column justify-content-center align-items-md-start mt-md-5 media_2">
                 <p class="p1 text-center">Company</p>
                 <a href="landingPage.html"><p class="p2 text-center">Hem</p></a>
                 <a href="services.html"><p class="p2 text-center">Våra Tjänster</p></a>
@@ -67,9 +68,52 @@
             </div>
         </div>
     </div>
+
+    <!--first-Modal-window begin-->
+    <div class="modal border-2 border-white" id="modal-window-one" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content modal-window-first">
+            <div class="modal-header">
+              <h5 class="modal-title">Ringa oss</h5>
+              <button type="button" class="btn-close text-white" id="bye" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h3>0046 73 621 78 07</h3>
+            </div>
+            <!--<div class="modal-footer">
+              <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary text-white">Save changes</button>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    <!--first-Modal-window end-->
+
+    <!--Second-modal-window begin-->
+    <div class="modal border-2 border-white" id="modal-window-two" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content modal-window-second">
+            <div class="modal-header">
+              <h5 class="modal-title">Maila oss</h5>
+              <button type="button" class="btn-close text-white" id="close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <input class="input__one" type="text" placeholder="Name">
+              <input class="input__one" type="text" placeholder="Phone">
+              <input class="input__one" type="text" placeholder="Email">
+              <input class="input__two" type="text" placeholder="Hello, I am interested in…">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="my__btn" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!---Second-modal-window end-->
     <script src="plugins/jquery/jquery-3.5.1.min.js"></script>
     <script src="plugins/fontawesome-free-5.15.3-web 2/js/all.min.js"></script>
     <script src="plugins/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/js/modal.js"></script>
     <script src="resources/js/script.js"></script>
 </body>
 </html>

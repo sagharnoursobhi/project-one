@@ -43,20 +43,23 @@
         height: 24px;
     }
 
-    .hero-text-box {
-        height: 100%;
-        display: flex;
-        flex-direction: cloun;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .arrow-footer a{
+        transition: 2000ms cubic-bezier(0.4, 0, 1, 1);;
+    }
+
+
+    .hero-text-box .extra{
+        display: flex!important;
+        justify-content:end!important;
+        align-items: end!important;
+        flex-direction: column!important;
     }
 
     .hero-text-box p {
         font-family: Metropolis;
         font-style: normal;
         font-weight: normal;
-        font-size: 20px;
+        font-size: 80%!important;
         line-height: 28px;
         letter-spacing: 1px;
         color: #fff;
@@ -66,18 +69,27 @@
 
     .hero-text-box h1 {
         font-family: Gotham;
-        font-size: 200%;
-        line-height: 80px;
-        letter-spacing: -2.01026px;
-        margin-bottom: 4rem;
+        font-size: 400%!important;
+        line-height: 90px;
+        letter-spacing: 4px;
+        margin-bottom: 1rem;
         color: #FFFFFF;
         display: block;
+        font-weight: 900!important;
+    }
+
+    .arrow-footer{
+        display: flex!important;
+        align-items: center!important;
+        justify-content: end!important;
+        margin-left: 15px!important;
+        margin-top: 4em!important;
     }
 
     .bottom-nav {
         list-style: none;
         float: left;
-        margin-top: 60px;
+        margin-top: 51px;
         padding: 0;
     }
 
@@ -114,22 +126,16 @@
         height: 60px;
     }
 
-    /*.arrow-footer a {
-        position: absolute;
-        width: 24px;
-        height: 24px;
-        left: 188px;
-        top: 779.31px;
-        color: #fff;
-    }*/
+    .arrow-footer {
+        margin-left: 2em;
+        justify-content: end;
+        align-items: center;
+        display: flex;
+        margin-top: 10em;
+    }
 
     .arrow-footer p {
-        /*position: absolute;
-        width: 82px;
-        height: 28px;
-        left: 218.5px;
-        top: 773.1px;*/
-
+        margin-left: 9px;
         font-family: Metropolis;
         font-style: normal;
         font-weight: normal;
@@ -197,7 +203,7 @@
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
-        height: 1300px;
+        height: 1140px;
     }
 
     .extra-one {
@@ -404,17 +410,13 @@
         height: 600px;
     }
 
-    .linear-two {
-        position: absolute;
-        width: 704px;
-        height: 2px;
-        right: 0;
-        top: 100px;
+    .linear-two{
+        width: 37em;
+        height:2px;
         border-top-left-radius: 57px;
         background: linear-gradient(90deg, #d1a26f 0%, #023151 94.96%);
         border-radius: 2px;
-        left: 34%;
-        top: 14%;
+        display: flex;
     }
 
     .footer-one h1 {
@@ -489,6 +491,158 @@
         max-width: 100%;
         max-height: 100%;
     }
+
+    /*carousel*/
+    .custom-carousel{
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        background: #023151;
+        height: 700px;
+        width: 100%;
+        margin-top: 5em;
+    }
+
+    .custom-carousel h1{
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 117%;
+        letter-spacing: -1.25641px;
+        margin-top: 1em;
+    }
+
+    .card h2{
+        font-family: Gotham;
+        font-size: 110%;
+        line-height: 26px;
+        letter-spacing: -0.603077px;
+        color: #000000;
+    }
+
+    .card p{
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.5px;
+        color: #000000;
+        opacity: 0.5;
+        padding: 0 11px;
+    }
+
+    .section-two-extra{
+        background: #FFFFFF;
+        box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+        border-radius: 25px;
+    }
+
+    .wrapper{
+        width: 100%;
+      }
+      .wrapper .owl-carousel{
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 30px;
+      }
+    
+      /*.owl-carousel .card {
+        margin: 20px 0;
+        border-radius: 25px;
+      }
+    
+      .card img{
+        width: 100%;
+        background: white;
+        width: 100%;
+        display: flex;
+        border-radius:26px 26px 0 0;
+      }*/
+      .owl-dot{
+        height: 15px;
+        width: 45px;
+        border: 2px solid #0072bc!important;
+        border-radius: 25px;
+        outline: none;
+        margin: 0 5px;
+        transition: all 0.3 ease;
+      }
+    
+      .owl-dot:hover,.owl-dot:active{
+        background: white!important;
+      }
+      .owl-nav button span {
+          font-size: xx-large;
+      }
+      .owl-dots{
+        align-items: center;
+        margin-top: 40px;
+      }
+
+      .card div{
+        border-bottom: 1px solid #e4e4e4;
+        padding-bottom: 13px;
+        margin-bottom: 23px;
+        width: 100%;
+      }
+
+      @media only screen and (max-width:1234px) {
+        .arrow-footer{
+            margin-left: 8em;
+            margin-top: 9em;
+        }
+        .hero-text-box{
+            margin-left: 9em;
+        }
+        .linear-two{
+            margin-top: 87px;
+        }
+        .custom-carousel{
+            height: 1000px!important;
+        }
+        nav-a img {
+            width: 95px!important;
+            height: 45px!important;
+        }
+        
+      }
+
+      @media only screen and (max-width:960px) {
+        .extra-one{
+            padding: 01em 4em;
+            margin-right: 3em;
+        }
+        .hero-text-box{
+            margin-left: 9em;
+        }
+        .linear-two{
+            margin-top: 87px;
+        }
+        .custom-carousel{
+            height: 1000px!important;
+        }
+        nav-a img {
+            width: 95px!important;
+            height: 45px!important;
+        }
+        
+      }
+
+      @media only screen and (max-width:991px) {
+        .hero-text-box p{
+            font-size: 75%!important;
+            margin-top: 12px!important;
+        }
+        .section-two .extra-one h2{
+            font-size: 362%!important;
+            line-height: 75px!important;
+            letter-spacing: 4px!important;
+            font-weight: normal!important;
+        }
+        
+      }
 
     
     

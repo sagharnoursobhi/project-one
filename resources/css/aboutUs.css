@@ -53,17 +53,28 @@
         letter-spacing: -2.01026px;
     }
     /*section-one*/
-    .section-one .extra{
-        margin-bottom: 3em;
-        padding: 10em;
-        align-items: end;
+   .section-one .extra-one{
+        padding: 41px;
     }
     .section-one img{
-        margin-top: 2em;
         display: flex;
         border-bottom-left-radius: 80px;
-        height:36em ;
-        float: right;
+        height: 642px;
+        width: 496px;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        border-bottom-left-radius: 80px;
+    }
+    .section-one .extra-two{
+        padding: 0;
+        margin: 0;
+        position: relative;
+        margin-bottom: 7em;
+    }
+
+    .section-one .extra-three{
+        padding: 41px;
     }
     /*carousel*/
     .custom-carousel{
@@ -73,6 +84,7 @@
         background: #023151;
         height: 700px;
         width: 100%;
+        margin-top: 5em;
     }
 
     .custom-carousel h1{
@@ -102,6 +114,7 @@
         letter-spacing: -0.5px;
         color: #000000;
         opacity: 0.5;
+        padding: 0 11px;
     }
 
     .section-two-extra{
@@ -142,9 +155,11 @@
       }
     
       .owl-dot:hover,.owl-dot:active{
-        background: green!important;
+        background: white!important;
       }
-    
+      .owl-nav button span {
+          font-size: xx-large;
+      }
       .owl-dots{
         align-items: center;
         margin-top: 40px;
@@ -220,4 +235,68 @@
     align-items: center;
     justify-content: space-between;
     color: #fff;
+}
+
+@media only screen and (max-width:504px) {
+    .section-one img{
+        width: 15em;
+        height: 22em;
+    }
+    
+  }
+
+  @media only screen and (max-width:767px) {
+    .section-one img{
+        height: 620px!important;
+        width: 486px!important;
+    }
+    .section-one .media{
+        margin-top: 23em!important;
+    }
+    /*.heading-carousel{
+        font-size: 33px!important;
+    }*/
+    .custom-carousel{
+        height: 1000px!important;
+    }
+    
+  }
+
+  @media only screen and (max-width:411px) {
+    .section-one img{
+        height: 544px!important;
+        width: 322px!important;
+    }
+    .section-one .media {
+        margin-top: 18em!important;
+    }
+    .custom-carousel {
+        height: 650px!important;
+    }
+
+    .section-one .media {
+        margin-top: 25em!important;
+    }
+    .section-one .heading-carousel{
+        font-weight: normal!important;
+        font-size: 30px!important;
+        letter-spacing: 2px!important;
+    }
+
+     .heading-carousel h1 {
+        font-size: 20px!important;
+        line-height: 35px!important;
+        letter-spacing: 2px!important;
+        font-weight: 200!important;
+    }
+    .owl-dots {
+        margin-top: 27px!important;
+    }
+    .card h1 {
+        font-family: Metropolis!important;
+        font-style: normal!important;
+        font-weight: normal!important;
+        font-size: 22px!important;
+        line-height: 117%!important;
+    }
 }

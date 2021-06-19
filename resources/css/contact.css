@@ -41,7 +41,7 @@
         line-height: 28px;
         letter-spacing: -0.502564px;
         color: #FFFFFF;
-        margin-bottom: 3em;
+        margin-bottom: 2em;
     }
 
     .btn-head {
@@ -102,13 +102,16 @@
         margin-top: 2em;
         margin-left: 2em;
     }
-    .part1 p{
+    .part1 div{
         width: 1070.48px;
         height: 1px;
         background: #FFFFFF;
         mix-blend-mode: normal;
         opacity: 0.1;
         margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%!important;
     }
 
     .part2{
@@ -136,3 +139,71 @@
         color: #979797;
     }
 
+    @media only screen and (max-width:800px) {
+
+        .text-box-one li {
+          display: list-item!important;
+        }
+        #open-btn{
+            margin-right: 19px!important;
+            margin-top: 10px!important;
+        }
+      }
+
+      @media only screen and (max-width:1018px){
+        .text-box-one p {
+            margin-top: 17px!important;
+            margin-bottom: 2em!important;
+        }
+        .media_2{
+            align-items: center!important;
+            margin-top: 20px!important;
+            margin-top: 51px!important;
+        }
+        .media_1{
+            align-items: center!important;
+            display: flex!important;
+            flex-direction:row!important;
+            align-items: center;
+            width: 100%!important;
+            margin-left: auto!important;
+            margin-right: auto!important;
+        }
+        .footer{
+            display: flex!important;
+            flex-direction: column!important;
+            align-items: center!important;
+        }
+        .media_row{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer .part1{
+            margin-left: auto!important;
+            margin-right: auto!important;
+        }
+        h1{
+            text-align: center!important;
+        }
+        .fa-facebook-f{
+            margin-left: 131px!important;
+            margin-right: 2.5em!important;
+        } 
+        .fa-twitter{
+            margin-right: 0.5em!important;
+        }
+        .fa-instagram{
+            margin-right:7em!important;
+        }
+        
+      }
+
+      @media only screen and (max-width:993px) {
+        .part1 div{
+            width: 700px!important;
+        }
+      }
