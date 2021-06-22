@@ -17,7 +17,6 @@
     <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
     <title>our-services</title>
 </head>
-<body>
   <header>
     <nav class=" nav-box flex">
         <div class="toggle-collapse">
@@ -155,7 +154,7 @@
           </div>
       </div>
       <div class="d-flex d-lg-none">
-        <div class="owl-carousel-second">
+        <div class="owl-carousel owl-second">
             <div class="box-shadow">
               <figure class="item-zoom">
                 <img class="image-two"  src="resources/imgs/card1.png" alt="first-card" width="100%">
@@ -201,7 +200,7 @@
                 </p>
               </figure>
             </div>
-            <div >
+            <div>
               <figure class="item-zoom">
                   <img class="image-two"  src="resources/imgs/card2.png" alt="first-card" width="100%">
                   <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
@@ -212,34 +211,41 @@
             </div>
           </div>
         </div>
-      <div class="container">
-        <div class="row d-f flex-column justify-content-center align-items-center mt-5 mb-5">
-          <div class="col-lg-4 col-md-6 col-sm-8"><h3 class="text-center">Begär en kostnadsfri offert </h3></div>
-          <div class="col-lg-4 col-md-6 col-sm-8 mt-2"><p class="text-center">Vill du renovera ditt kök? Eller byta ut dina fönster? Eller kanske få ett större hus. Kontakta oss för mer information.</p></div>
-          <div class="col-lg-4 col-md-6 col-sm-8 d-flex justify-content-center align-items-center mt-5">
-            <button class="button text-center" id="hello">Ringa oss</button>
-            <button class="button text-center" id="open-btn" style="margin-left: 56px;">Maila oss</button>
+      </div>
+
+      <div>
+        <div class="container">
+          <div class="row d-f flex-column justify-content-center align-items-center mt-5 mb-5">
+            <div class="col-lg-4 col-md-6 col-sm-8"><h3 class="text-center">Begär en kostnadsfri offert </h3></div>
+            <div class="col-lg-4 col-md-6 col-sm-8 mt-2"><p class="text-center">Vill du renovera ditt kök? Eller byta ut dina fönster? Eller kanske få ett större hus. Kontakta oss för mer information.</p></div>
+            <div class="col-lg-4 col-md-6 col-sm-8 d-flex justify-content-center align-items-center mt-5">
+              <button class="button text-center" id="hello">Ringa oss</button>
+              <button class="button text-center" id="open-btn" style="margin-left: 56px;">Maila oss</button>
+            </div>
           </div>
         </div>
       </div>
+
       <!--footer-->
-      <div class="container-fluid footer-two">
-        <div class="row d-flex flex-column justify-content-center align-items-center">
-            <h1 class="text-center text-white mt-5">Make your dreams a</h1>
-            <h1 class="text-center gradient mb-5">reality</h1>
-            <p class="text-center text-white">company</p>
-            <a href="landingPage.html"><p class="text-center">Hem</p></a>
-            <a href="services.html"><p class="text-center">Våra Tjänster</p></a>
-            <a href="aboutUs.html"><p class="text-center">Om Oss</p></a>
-            <a href="contactUs.html"><p class="text-center">Kontact</p></a>
-            <img src="resources/imgs/logo.png" class="mw-100 mh-100" alt="logo">
+      <div>
+        <div class="container-fluid footer-two">
+          <div class="row d-flex flex-column justify-content-center align-items-center">
+              <h1 class="text-center text-white mt-5">Make your dreams a</h1>
+              <h1 class="text-center gradient mb-5">reality</h1>
+              <p class="text-center text-white">company</p>
+              <a href="landingPage.html"><p class="text-center">Hem</p></a>
+              <a href="services.html"><p class="text-center">Våra Tjänster</p></a>
+              <a href="aboutUs.html"><p class="text-center">Om Oss</p></a>
+              <a href="contactUs.html"><p class="text-center">Kontact</p></a>
+              <img src="resources/imgs/logo.png" class="mw-100 mh-100" alt="logo">
+          </div>
+          <div class="row">
+              <i></i>
+              <i></i>
+              <i></i>
+          </div>
         </div>
-        <div class="row">
-            <i></i>
-            <i></i>
-            <i></i>
-        </div>
-    </div>
+      </div>
 
     <!--first-Modal-window begin-->
     <div class="modal border-2 border-white" id="modal-window-one" tabindex="-1">
@@ -289,7 +295,11 @@
     <script src="plugins/owl/owl.carousel.min.js"></script>
     <script src="resources/js/modal.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
+        
+      $(function($){
+        "use strict";
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
           margin:10,
           loop:true,
           autoplay:false,
@@ -309,7 +319,7 @@
           },
       });
 
-      $('.owl-carousel-second').owlCarousel({
+      $('.owl-second').owlCarousel({
           margin:10,
           loop:true,
           autoplay:false,
@@ -319,7 +329,7 @@
               nav:false
             },
             500:{
-              items:3,
+              items:1,
               nav:false
             },
           },
@@ -332,6 +342,10 @@
               nav:true
             },
           });
+        });
+      });
+      
+         
     </script>
 </body>
 </html>

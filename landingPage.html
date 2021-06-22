@@ -18,22 +18,18 @@
     </head>
     <body>
         <header class="header-one">
-            <nav class=" nav-box flex">
-                <div class="toggle-collapse">
-                  <div class="collapse-icons text-black">
-                      <span><i class="fas fa-bars text-white"></i></span>
-                  </div>
-                </div>
-                <div>
-                  <ul class="nav-items flex main-nav">
-                    <li class="nav-a"><img class="logo" src="resources/imgs/logo.png" alt="log" /></li>
-                    <li class="nav-a"><a href="landingPage.html" class="text-black link">Hem</a></li>
-                    <li class="nav-a"><a href="services.html" class="text-black link">Våra Tjänster</a></li>
-                    <li class="nav-a"><a href="aboutUs.html" class="text-black link">Om oss</a></li>
-                    <li class="nav-a"><a href="contactUs.html" class="text-black link">Kontact</a></li>
-                  </ul>
-                </div>
+            <nav class="nav-wrapper">
+                <div class="logo"><a href=""><img src="resources/imgs/2.png" alt="logo"></div>
+                <ul class="menu">
+                  <li><a href="#img">Home</a></li>
+                  <li><a href="indexTwo.html">My Work</a></li>
+                  <li><a href="index3.html">About</a></li>
+                  <li><a href="#img">Slider</a></li>
+                  <li><a href="#">Footer</a></li>
+                </ul>
               </nav>
+              <div class="menu-trigger js-menu-trigger"></div>
+              
               <!--end of new navbar-->
 
             <div class="hero-text-box container">
@@ -74,12 +70,12 @@
                         Vi erbjuder alla tjänster för dina behov.
                 </p>
             </div>
-            <div class="container">-
+            <div class="container">
                 <div class="row justify-content-center align-items-center d-none d-lg-flex">
                     <div class="col-4">
                         <figure class="item-zoom">
                             <img class="image-two"  src="resources/imgs/card1.png" alt="first-card" width="100%">
-                            <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
+                            <h5 class="text-left ml-5">Renovering av kök</h5>
                              <div></div>
                             <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
                             </p>
@@ -88,7 +84,7 @@
                     <div class="col-4" >
                         <figure class="item-zoom">
                             <img class="image-two"  src="resources/imgs/card3.png" alt="first-card" width="100%">
-                            <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
+                            <h5 class="text-left ml-5">Renovering av kök</h5>
                             <div></div>
                             <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
                             </p>
@@ -305,5 +301,6 @@
                 }
             });
        </script>
+       <script src="resources/js/script.js"></script>
     </body>
     </html>
