@@ -17,22 +17,17 @@
 </head>
 <body>
   <header>
-    <nav class=" nav-box flex">
-        <div class="toggle-collapse">
-          <div class="collapse-icons text-black">
-              <span><i class="fas fa-bars text-white"></i></span>
-          </div>
-        </div>
-        <div>
-          <ul class="nav-items flex main-nav">
-            <li class="nav-a"><img class="logo" src="resources/imgs/logo.png" alt="log" /></li>
-            <li class="nav-a"><a href="landingPage.html" class="text-black">Hem</a></li>
-            <li class="nav-a"><a href="services.html" class="text-black">Våra Tjänster</a></li>
-            <li class="nav-a"><a href="aboutUs.html" class="text-black">Om oss</a></li>
-            <li class="nav-a"><a href="contactUs.html" class="text-black">Kontact</a></li>
-          </ul>
-        </div>
-      </nav>
+    <nav class="nav-wrapper nav-box">
+      <div class="logo"><a href=""><img src="resources/imgs/2.png" alt="logo"></div>
+      <ul class="menu">
+        <li><a href="landingPage.html">Hem</a></li>
+        <li><a href="services.html">Våra Tjänster</a></li>
+        <li><a href="aboutUs.html">Om oss</a></li>
+        <li><a href="contactUs.html">Kontact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-trigger-white js-menu-trigger-white"></div>
+    <div class="menu-trigger-blue js-menu-trigger-blue"></div>
       <!--end of new navbar-->
     </header>
     <div class="container-fluid" style="width: 100%; max-width: 100%; max-height: 100%;">
@@ -163,5 +158,6 @@
         },
     });
     </script>
+    <script src="resources/js/script.js"></script>
 </body>
 </html>

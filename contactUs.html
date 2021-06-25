@@ -15,22 +15,17 @@
 </head>
 <body>
     <header>
-        <nav class=" nav-box flex">
-            <div class="toggle-collapse">
-              <div class="collapse-icons text-black">
-                  <span><i class="fas fa-bars text-white"></i></span>
-              </div>
-            </div>
-            <div>
-              <ul class="nav-items flex main-nav">
-                <li class="nav-a"><img class="logo" src="resources/imgs/logo.png" alt="log" /></li>
-                <li class="nav-a"><a href="landingPage.html" class="text-black">Hem</a></li>
-                <li class="nav-a"><a href="services.html" class="text-black">Våra Tjänster</a></li>
-                <li class="nav-a"><a href="aboutUs.html" class="text-black">Om oss</a></li>
-                <li class="nav-a"><a href="contactUs.html" class="text-black">Kontact</a></li>
-              </ul>
-            </div>
-          </nav>
+      <nav class="nav-wrapper nav-box">
+        <div class="logo"><a href=""><img src="resources/imgs/2.png" alt="logo"></div>
+        <ul class="menu">
+          <li><a href="landingPage.html">Hem</a></li>
+        <li><a href="services.html">Våra Tjänster</a></li>
+        <li><a href="aboutUs.html">Om oss</a></li>
+        <li><a href="contactUs.html">Kontact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-trigger-white js-menu-trigger-white"></div>
+      <div class="menu-trigger-blue js-menu-trigger-blue"></div>
           <!--end of new navbar-->
     </header>
     
@@ -39,8 +34,8 @@
             <h1 class="text-center">Kontakt oss </h1>
             <p class="text-center">Vill du renovera ditt kök? Eller byta ut dina fönster? Eller kanske få ett större hus. Kontakta oss för mer information.</p>
             <ul class="text-center">
-                <li class="d-inline-block"><button type="button" class="btn-head btn1" id="hello" href="">Ringa oss</button></li>
-                <li class="d-inline-block ms-3"><button type="button" id="open-btn" class="btn-head" href="">Maila oss</button></li>
+                <li class="d-inline-block list-one"><button type="button" class="btn-head btn1" id="first-open-btn" href="">Ringa oss</button></li>
+                <li class="d-inline-block ms-3"><button type="button" id="second-open-btn" class="btn-head" href="">Maila oss</button></li>
             </ul>
         </div>
     </div>
@@ -54,7 +49,7 @@
             </div>
         </div>
         <div class="row media_row">
-            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center media_1" style="margin-top: 3em;">
+            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center media_1" >
                 <i class="fab fa-facebook-f text-white" style="margin-right: 1.5em;"></i>
                 <i class="fab fa-twitter text-white"></i>
                 <i class="fab fa-instagram text-white" style="margin-left: 1.5em;"></i>
@@ -75,15 +70,11 @@
           <div class="modal-content modal-window-first">
             <div class="modal-header">
               <h5 class="modal-title">Ringa oss</h5>
-              <button type="button" class="btn-close text-white" id="bye" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close text-white" id="first-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <h3>0046 73 621 78 07</h3>
             </div>
-            <!--<div class="modal-footer">
-              <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary text-white">Save changes</button>
-            </div>-->
           </div>
         </div>
       </div>
@@ -114,6 +105,7 @@
     <script src="plugins/fontawesome-free-5.15.3-web 2/js/all.min.js"></script>
     <script src="plugins/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
     <script src="resources/js/modal.js"></script>
+    <script src="resources/js/script.js"></script>
     
 </body>
 </html>

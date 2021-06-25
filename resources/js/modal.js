@@ -1,45 +1,39 @@
 
 
-const toggleCollapse = document.querySelector('.toggle-collapse span');
-const nav = document.querySelector('.nav-box');
-
-//onclick event on toggle collapse span tag
-toggleCollapse.addEventListener('click', () => {
-  nav.classList.toggle("collapse")//using toggle instead of add to open and close the window dynamically
-})
-
-//first modal
-let btnOpenFirst = document.getElementById('hello');
-let btnCloseFirst = document.getElementById('bye');
-let modalFirst = new bootstrap.Modal(document.getElementById('modal-window-one'));
+  //first modal
+  let btnOpenFirst = document.getElementById('first-open-btn');
+  let btnCloseFirst = document.getElementById('first-close-btn');
+  let modalFirst = new bootstrap.Modal(document.getElementById('modal-window-one'));
 
 
-btnOpenFirst.addEventListener('click', () => {
-  modalFirst.toggle();
-})
+  btnOpenFirst.addEventListener('click', () => {
+    modalFirst.toggle();
+  })
 
-btnCloseFirst.addEventListener('click', () => {
+  btnCloseFirst.addEventListener('click', () => {
 
-  modalFirst.style.display = 'none';
+    modalFirst.style.display = 'none';
 
-})
+  })
 
-//second modal
+  //second modal
 
-let btnOpenSecond = document.getElementById('open-btn');
-let btnCloseSecond = document.getElementById('close-btn');
-let modalSecond = new bootstrap.Modal(document.getElementById('modal-window-two'));
+  let btnOpenSecond = document.getElementById('second-open-btn');
+  let btnCloseSecond = document.getElementById('second-close-btn');
+  let modalSecond = new bootstrap.Modal(document.getElementById('modal-window-two'));
 
 
-btnOpenSecond.addEventListener('click', () => {
-  modalSecond.toggle();
-})
+  btnOpenSecond.addEventListener('click', () => {
+    modalSecond.toggle();
+  })
 
-btnCloseSecond.addEventListener('click', () => {
+  btnCloseSecond.addEventListener('click', () => {
 
-  modalSecond.style.display = 'none';
+    modalSecond.style.display = 'none';
 
-})
+  })
+
+
 
 
 

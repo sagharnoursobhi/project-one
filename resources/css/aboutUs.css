@@ -17,12 +17,9 @@
         font-size: 96%;
     }
 
-    header nav {
-        background: linear-gradient(90.16deg, #00426F 102.15%, rgba(0, 66, 111, 0) 107.49%);
-    }
-
     header{
         height: 95px;
+        background: linear-gradient(90.16deg, #00426F 102.15%, rgba(0, 66, 111, 0) 107.49%);
     }
 
     .main-box{
