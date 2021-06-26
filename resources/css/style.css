@@ -1,7 +1,8 @@
     * {
-        /*margin: 0;*/
+        /* margin: 0; */
         padding: 0;
         box-sizing: border-box;
+        scroll-behavior: smooth;
     }
 
     html {
@@ -24,7 +25,7 @@
             rgba(0, 0, 0, 0.0001) 15.31%,
             rgba(0, 0, 0, 0.837986) 67.37%
             ),
-            url(images/header.jpg);
+            url('../imgs/header.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -40,9 +41,9 @@
     }
 
     .arrow-footer a{
-        transition: 2000ms cubic-bezier(0.4, 0, 1, 1);
-        text-decoration: none;
+        text-decoration:none!important;
     }
+
 
 
     .hero-text-box .extra{
@@ -100,7 +101,7 @@
         margin-right: 3em;
     }
 
-    .arrow-footer p {
+     .arrow-footer p {
         margin-left: 9px;
         font-family: Metropolis;
         font-style: normal;
@@ -114,19 +115,32 @@
     .arrow-footer i{
         padding-top: 31px;
     }
-    .section-one img{
+    /* .section-one img{
         display: flex;
         border-top-right-radius: 56px;
         height: 100%;
+    } */
+    .section-one .parent-row{
+        height: auto;
     }
 
     .section-one-img{
         padding-left: 0!important;
         padding-top: 65px!important;
-        z-index: 1;
         border-top-right-radius: 57px;
         padding-top: 65px;
-        height: 500px;
+        height: 568px;
+        max-width: 100%;
+        background-image: url(../imgs/imageHeader.png);
+        background-size: cover;
+        background-position: -375px 0px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+    }
+    .section-one_index h2{
+        margin-top: 20px;
     }
 
     .section-one h6 {
@@ -212,7 +226,7 @@
         max-height: 100%;
         width: 142px;
         height: 100px;
-        margin-top: 30px;
+        margin-top: 96px;
         margin-bottom: 50px;
     }
 
@@ -295,7 +309,7 @@
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
     }
-    @media (max-width: 800px) {
+    @media (max-width: 991px) {
         .item-zoom:hover {
             -moz-transform: scale(1.0);
             -webkit-transform: scale(1.0);
@@ -332,30 +346,6 @@
         display: inline-block;
     }
 
-    .section-three {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: end;
-        /* margin-left: 100px; */
-        height: 900px;
-    }
-
-
-    .linear-one {
-        border: 1px solid black;
-        max-width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 400px;
-        height: 1px;
-        margin-bottom: 40px;
-        border-image-source: linear-gradient(90deg, #0067ad 0%, #02375b 94.96%);
-        border-image-slice: 1;
-        border-radius: 2px;
-    }
-
     .section-three p {
         font-family: Metropolis;
         font-size: 90%;
@@ -373,31 +363,52 @@
     .section-three h1 {
         font-family: Gotham;
         font-weight: bold;
-        font-size: 180%;
+        font-size: 40px;
         line-height: 33px;
         letter-spacing: -1.25641px;
         color: #000000;
         font-family: Gotham;
         text-align: left;
+        margin-bottom: 60px;
+        padding-top: 29px;
+
+        border-top: 1px solid black;
+        max-width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 1px;
+        border-image-source: linear-gradient(90deg, #0067ad 0%, #02375b 94.96%);
+        border-image-slice: 1;
     }
 
-    .section-three button{
-        width: 148px;
-        height: 36px;
+    .section-three a{
+        padding: 10px 28px;
         border-radius: 26px;
         background: 0067AD;
         background: #0067AD;
         color: white;
         border: 0;
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+        padding-top: 5px;
+    }
+    .section_3_text{
+        padding: 29px;
+        padding-left: 28px;
     }
 
     .interior-designer {
+        margin-top: 33px;
         padding: 0;
         border-top-left-radius: 57px;
         filter: drop-shadow(0px 62px 54px rgba(0, 0, 0, 0.3));
         width: 100%;
         height: 70%;
-        margin-top: 10em;
+    }
+    .section-three .custom_logo{
+        margin-top: 25px;
     }
 
     /*FOOTER*/
@@ -605,80 +616,177 @@
       }
 
 
-      @media only screen and (max-width:960px) {
+     @media only screen and (max-width:360px) {
       
-        .footer-two .footer-section-two{
-            flex-direction: column-reverse;
-            align-items: center;
-            justify-content: center;
+        .hero-text-box .bottom-nav li{
+            margin-top: 18px!important;
+            display: block!important;
         }
-        .footer-two .footer-two-image{
-            align-items: center;
-            justify-content: center;
+        .hero-text-box p{
+            font-size: 15px;
         }
-        .footer-one p{
-            font-size: 14px;
+        .hero-text-box .bottom-nav{
+            margin-left: auto!important;
+            margin-right: auto!important;
         }
-        .section-two .header-p{
-            padding: 0 45px;
+        .hero-text-box .bottom-nav .btn1{
+            margin-right: 0!important;
         }
+      .section-one .section-text h6{
+        font-size: 16px!important;
+      }
+      .section-one .section-text h2{
+        font-size: 27px!important;
+      }
+      .section-one .section-text p{
+        font-size: 15px;
+      }
+      .section-one .section-text a{
+        padding: 5px 27px;
+        margin-left: 25px;
+        font-size: 14px;
+      }
+      .section-one .section-one-img {
+       background-image: url('../imgs/SecondMobile.jpg')!important;
+       background-position-x: 1px;
+     }
+
+      .section-two h2{
+        font-size: 25px;
+      }
+      .section-two p{
+        font-size: 13px;
+      }
+      .section-three h1{
+        font-size: 29px;
+      }
+      .section-three p {
+        font-size: 14px;
+      }
+      .section-three a{
+        font-size: 16px;
+        padding: 5px 21px;
+      }
     }
 
-       @media only screen and (max-width:991px) {
-        .section-one .section-one-img{
-            height: 428px;
-        }
-        .section-one h2{
-            font-size: 37px;
-            margin-bottom: 20px;
+       /*@media only screen and (max-width:720px){
+           .section-one .parent-row{
+               height:auto!important;
+           }
+        .section-one .section-one_index{
+            z-index:0!important;
         }
         .section-one h6{
-            font-size: 17px;
+            margin-top: 20px!important;
+            font-size:16px;
+        }
+        .section-one h2{
+            font-size: 30px; 
+            margin-left: 26px;
         }
         .section-one p{
             font-size: 16px;
         }
         .section-one a {
-            margin-top: 1rem
-        }
-        .arrow-footer .frist-link a{
-            font-size: 362%!important;
-            line-height: 75px!important;
-            letter-spacing: 4px!important;
-            font-weight: normal!important;
-        }
-        /* .extra-one h2{
-            font-size: 25px;
-            line-height: 27px!important;
-            letter-spacing: 2px!important;
-            font-weight: normal!important;
-        }
-        .extra-one p{
-            font-size: 12px!important;
+            padding: 8px 31px;
+            font-size: 16px!important;
         }
 
-        .owl-nav {
-            left: -25px!important;
-            right: -25px!important;
-        }  */
-        
-      } 
+    } */
 
-    
-       @media only screen and (max-width:795px) {
-        .section-one .section-text {
-            padding-left: 10px;
-            padding-right: 10px;
+    @media only screen and (max-width:560px){
+        .section-three{
+            flex-direction: column-reverse;
         }
-        /* .linear-two{
-            margin-top: 87px;
+        .section-three .interior-designer{
+            margin-bottom: 14px;
         }
-        .custom-carousel{
-            height: 1000px!important;
+        .section-one-img{
+            height: 492px;
         }
-        nav-a img {
-            width: 95px!important;
-            height: 45px!important;
-        } */
+        .hero-text-box h1{
+            font-size: 52px;
+        }
+        .hero-text-box p{
+            font-size: 18px;
+        }
+        .btn-head{
+            font-size: 15px;
+            padding: 9px 28px;
+        }
+
+        .custom_logo_parent{
+            width: 100px;
+            height: 92px;
+        }
+        .section-three h1{
+            font-size: 34px;
+        }
+        .section-three p{
+            font-size: 16px;
+        }
+        .section-three .section_3_text a{
+            padding: 8px 25px;
+        }
+        .footer-one h1{
+            font-size: 33px;
+        }
+        .footer-one p{
+            font-size: 15px;
+        }
+        .footer-one img{
+            width: 56px;
+            height: 20px;
+        }
+        .footer-two h1{
+            font-size: 33px;
+        }
+        .footer-two img{
+            width: 90px!important;
+            height: 45px!important;     
+        }
+        .footer-two-image img {
+            width: 90px;
+            height: 45px;     
+        }
+        .footer-two .footer-two-image a {
+            font-size: 15px;
+        }
+        .footer-two .footer-section-one h1{
+            text-align:left!important;
+            margin-left:20px!important;
+        }
+        .footer-two .footer-section-two{
+            flex-direction: column-reverse!important;
+            justify-content: flex-start!important;
+            align-items: flex-start!important;
+        }
+    }
+       
+
+   @media only screen and (max-width:991px){
+        .section-one-img{
+            padding-top: 0;
+            left: 0;
+            right: 0;
+            padding-left: 0!important;
+            position: initial;
+            z-index: initial;
+        }
+        .section-one .parent-row{
+            padding-top:0!important;
+            padding-bottom:0!important;
+        }
+        .section-one .section-one_index{
+            padding: 0 0!important;
+            /* background-image: url('../imgs/SecondMobile.jpg')!important; */
+        }
+        .section-one-img{
+            height: 492px;
+        }
+        .owl-dots{
+            margin-bottom: 32px!important;
+        }
+    }
         
-      }
+      

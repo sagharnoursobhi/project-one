@@ -28,26 +28,33 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        height: 70vh;
+        height: auto;
     }
 
     .main-box h1{
         font-family: Metropolis;
         font-style: normal;
         font-weight: normal;
-        line-height: 28px;
+        line-height: 14px;
         text-align: center;
         color: #FFFFFF;
+        margin-top: 3em!important;
+        font-size: 40px;
+        padding-left: 57px;
+        padding-right: 57px;
     }
 
     .main-box p {
         font-family: Metropolis;
         font-style: normal;
         font-weight: normal;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 28px;
         text-align: center;
         color: #FFFFFF;
+        margin-bottom: 3em!important;
+        padding-left: 57px;
+        padding-right: 57px;
     }
     
     .custom-container-two p {
@@ -56,6 +63,7 @@
         font-weight: normal;
         font-size: 90%;
         line-height: 38px;
+        
     }
 
     .custom-container-two h3{
@@ -66,6 +74,7 @@
         line-height: 117%;
         letter-spacing: -1.25641px;
         color: #000000;
+        
     }
 
     .box-shadow{  
@@ -192,4 +201,12 @@
     .custom-container-one img{
         display: flex !important;
         border-radius: 20px !important;
+    }
+
+    @media (max-width: 991px) {
+        .item-zoom:hover {
+            -moz-transform: scale(1.0);
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+        }
     }

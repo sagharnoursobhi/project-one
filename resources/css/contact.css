@@ -180,3 +180,15 @@
             margin-bottom: 14px!important;
           }
       }
+
+      @media screen and (max-width:991px) and (min-width:669px) {
+        .footer .media_row{
+          display: flex!important;
+          flex-direction: column-reverse!important;
+          justify-content: center!important;
+          align-items: center!important;
+        }
+        .footer .media_2{
+          align-items: center!important;
+        }
+      }

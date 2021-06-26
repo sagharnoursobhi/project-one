@@ -1,17 +1,5 @@
 $(document).ready(function(){
 
-  // var body = $('body');
-  //     var menuTrigger = $('.js-menu-trigger');
-
-  //     menuTrigger.on('click', function(){
-  //       body.addClass('menu-is-active');
-  //     });
-
-
-  //     $('.menu').on('click', function(){
-  //         $('body').removeClass("menu-is-active");
-  //     });
-
   var body = $('body');
     var iconWhite = $('.js-menu-trigger-white');
     var iconBlue =$('.js-menu-trigger-blue')
@@ -25,16 +13,10 @@ $(document).ready(function(){
         body.addClass('firstMenu-is-active');
         
     })
+    $(window).on("scroll" , function(){
+        var scrollFromTop = $(window).scrollTop();
+        $("body").toggleClass("scroll" , (scrollFromTop > 150));//scroll from top of window to the part which is less than 350px
+
+    })//scroll class is added to body
 });
-
-
-//removing classes of owl carousels
-// let removeHover = document.querySelector('.item-zoom');
-// var x = window.matchMedia("(max-width: 1000px) and (min-width:0)")
-// myFunction(x);
-// function myFunction(x) {
-//   if (x.matches) { // If media query matches
-//     removeHover.style.pointerEvents= 'none';
-// }
-// }
 
