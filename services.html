@@ -17,35 +17,36 @@
     <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
     <title>our-services</title>
 </head>
-  <header>
-    <nav class="nav-wrapper nav-box">
-      <div class="logo"><a href=""><img src="resources/imgs/2.png" alt="logo"></div>
-      <ul class="menu">
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="services.html">Våra Tjänster</a></li>
-        <li><a href="aboutUs.html">Om oss</a></li>
-        <li><a href="contactUs.html">Kontact</a></li>
-      </ul>
-    </nav>
-    <div class="menu-trigger-white js-menu-trigger-white"></div>
-    <div class="menu-trigger-blue js-menu-trigger-blue"></div>
-      <!--end of new navbar-->
-    </header>
-    <div class="container-fluid">
-      <div class="row main-box d-flex flex-column justify-content-lg-center align-items-center">
+    <div class="container-fluid header-background">
+      <div class="row custom_navbar">
+        <nav class="nav-wrapper nav-box">
+          <div class="logo"><a href=""><img src="resources/imgs/2.png" alt="logo"></div>
+          <ul class="menu">
+            <li class="list1"><a href="index.html">Hem</a></li>
+            <li class="list2"><a href="services.html">Våra Tjänster</a></li>
+            <li class="list3"><a href="aboutUs.html">Om oss</a></li>
+            <li class="list4"><a href="contactUs.html">Kontact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-trigger-white js-menu-trigger-white"></div>
+        <div class="menu-trigger-blue js-menu-trigger-blue"></div>
+      </div>
+      <div class="row main-box d-flex justify-content-center align-items-center">
         <h1 class="topic">Hitta den perfekta tjänsten för dina behov</h1>
-        <p class="mt-5">
+        <p class="">
           Från husbyggnad till badrumsrenovering. Från att avsluta el- och vattenavtal till inredning. Vi erbjuder alla tjänster för dina behov.</p>
-    </div>
+      </div>
     </div>
     <!--section-one-->
     <div class="container custom-container-one">
-      <div class="row d-flex flex-column justify-content-center align-items-start mt-5">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-start mt-5">
           <h3 >Your Home should tell the story of who you are</h3>
           <p >Vi är specialiserade på rymdplanering, kök- och badrumsdesign, inbyggda och öppna spisar samt inredningsutrymmen. Vi har den expertis du behöver från en designer. Budget eller skräddarsydda tar vi en anpassad inställning till dina inredningsbehov.</p>
         </div>
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mx-auto">
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mx-auto">
           <div class="owl-carousel nav-exclude">
             <div class="section_carousel_item">
               <img src="resources/imgs/slide1.png" alt="">
@@ -68,6 +69,16 @@
             <div class="section_carousel_item">
               <img src="resources/imgs/slide7.png" alt="">
             </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 justify-content-center d-flex align-items-center">
+          <div class="d-flex align-items-start flex-column justify-content-center custom_form">
+            <label for="">Kontakta oss</label>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Phone">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Hello.I am interested in...">
+            <button>Skicka</button>
           </div>
         </div>
       </div>
@@ -197,7 +208,7 @@
             </div>
             <div>
               <figure class="item-zoom">
-                  <img class="image-two"  src="resources/imgs/card2.png" alt="first-card" width="100%">
+                  <img class="image-two" src="resources/imgs/card2.png" alt="first-card" width="100%">
                   <h5 class="text-left ml-5" style="margin-left: 20px;">Renovering av kök</h5>
                   <div></div>
                   <p class="card-paragraph">Man tillbringar mycket tid i sitt kök. Därför är det viktigt att man trivs där.
@@ -209,35 +220,41 @@
       </div>
 
       <div>
-        <div class="container">
+        <!--section-three-->
+        <div class="container section-three">
           <div class="row d-f flex-column justify-content-center align-items-center mt-5 mb-5">
             <div class="col-lg-4 col-md-6 col-sm-8"><h3 class="text-center">Begär en kostnadsfri offert </h3></div>
             <div class="col-lg-4 col-md-6 col-sm-8 mt-2"><p class="text-center">Vill du renovera ditt kök? Eller byta ut dina fönster? Eller kanske få ett större hus. Kontakta oss för mer information.</p></div>
             <div class="col-lg-4 col-md-6 col-sm-8 d-flex justify-content-center align-items-center mt-5">
-              <button class="button text-center" id="first-open-btn">Ringa oss</button>
-              <button class="button text-center" id="second-open-btn" style="margin-left: 56px;">Maila oss</button>
+              <button class="button text-center first_btn" id="first-open-btn">Ringa oss</button>
+              <button class="button text-center" id="second-open-btn">Maila oss</button>
             </div>
           </div>
         </div>
       </div>
 
       <!--footer-->
-      <div>
-        <div class="container-fluid footer-two">
-          <div class="row d-flex flex-column justify-content-center align-items-center">
-              <h1 class="text-center text-white mt-5">Make your dreams a</h1>
-              <h1 class="text-center gradient mb-5">reality</h1>
-              <p class="text-center text-white">company</p>
+      <div class="container-fluid footer-two">
+        <div class="row footer-section-one">
+            <div class="col-10 section-border d-flex justify-content-start align-items-start pb-xl-5 pb-lg-5 pb-md-5 pb-sm-4">
+                <p class="text-start ms-xl-3 ms-lg-3 ms-md-3 mt-5 text-white">Make your dreams a<span class="gradient ms-1">reality</span></p>
+            </div>
+        </div>
+        <div class="row pb-4 footer-section-two justify-content-start align-items-start">
+          <div class="col-4 d-flex flex-column justify-content-center align-items-center footer-two-image">
+              <img src="resources/imgs/logo.png" class="mw-100 mh-100 mt-5 " alt="logo">
+              <div class="mt-4 icon-section">
+                  <a href="" class="text-white ms-3"><i class="fab fa-facebook-f text-white"></i></a>
+                  <a href="" class="text-white ms-3"><i class="fab fa-twitter text-white"></i></a>
+                  <a href="" class="text-white ms-3"><i class="fab fa-instagram text-white"></i></a>
+              </div>
+          </div>
+          <div class="col-4 d-flex flex-column align-items-center justify-content-center section-link">
+              <p class="text-center text-white mt-5">company</p>
               <a href="index.html"><p class="text-center">Hem</p></a>
               <a href="services.html"><p class="text-center">Våra Tjänster</p></a>
               <a href="aboutUs.html"><p class="text-center">Om Oss</p></a>
               <a href="contactUs.html"><p class="text-center">Kontact</p></a>
-              <img src="resources/imgs/logo.png" class="mw-100 mh-100" alt="logo">
-          </div>
-          <div class="row">
-              <i></i>
-              <i></i>
-              <i></i>
           </div>
         </div>
       </div>

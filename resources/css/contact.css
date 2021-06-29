@@ -35,8 +35,6 @@
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
-        line-height: 28px;
-        letter-spacing: -0.502564px;
         color: #FFFFFF;
         margin-bottom: 2em;
     }
@@ -57,9 +55,7 @@
     .text-box-one h1 {
         font-family: Gotham;
         font-size: 50px;
-        line-height: 59px;
         text-align: center;
-        letter-spacing: -1.25641px;
         color: #FFFFFF;
         margin-top: 5em;
     }
@@ -68,127 +64,104 @@
     }
 
     /*footer*/
-    .footer{
-        background: linear-gradient(225.52deg, #001E27 0.45%, rgba(3, 15, 19, 0.982162) 45.25%);
-        height: 551px;
-    }
-    .media_2 a{
-        text-decoration: none;
-    }
-    .footer h1 p{
-        background: #005c9b;
-        background: -webkit-linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
-        background: -moz-linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
-        background: linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: Gotham;
-        font-size: 42px;
-        line-height: 49px;
-        letter-spacing: -1.05538px;
-    }
+    
+    .footer-two {
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 100%;
+      background: linear-gradient(
+          225.52deg,
+          #04080a 0.45%,
+          rgba(3, 15, 19, 0.982162) 45.25%
+      );
+      height: auto;
+  }
 
-    .footer h1{
-        font-family: Gotham;
-        font-size: 210%;
-        line-height: 49px;
-        letter-spacing: -1.05538px;
-        font-weight: 300;
-        color: #fff;
-    }
+  .gradient {
+      background: #005c9b;
+      background: -webkit-linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
+      background: -moz-linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
+      background: linear-gradient(to left, #005c9b 100%, #1b2f51 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Gotham;
+  }
 
-    .part1 div{
-        width: 1070.48px;
-        height: 1px;
-        background: #FFFFFF;
-        mix-blend-mode: normal;
-        opacity: 0.1;
-        margin-top: 2em;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 100%!important;
-    }
+  .footer-two .section-border p {
+      font-family: Gotham;
+      font-size: 33px;
+  }
+  .footer-two a{
+      text-decoration: none;
+  }
+  .footer-two .section-link p {
+      font-family: Metropolis;
+      font-size: 15px;
+      color: #979797;
+  }
 
-    .part2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        align-items: end;
-    }
-
-    .part2 .p1{
-        font-family: Gotham;
-        font-size: 15px;
-        line-height: 75%;
-        color: #fff;
-    }
-
-    .part2 .p2{
-        font-family: Metropolis;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 15px;
-        letter-spacing: -0.376923px;
-        color: #979797;
-    }
-
+  .footer-two img {
+      width: 200px;
+      max-width: 100%;
+      max-height: 100%;
+  }
+  .footer-two .section-border{
+    margin-left: 20px;
+    border-bottom: 0.5px solid #ffffff21;
+  }
     
 
-      @media only screen and (max-width:695px) {
-          header nav ul{
-            width: 220px!important;
-            height: 353.87px!important;
-          }
-          header nav ul li{
-            margin-top: 29px!important;
-            padding-bottom: 16px!important;
-          }
-          .footer h1{
-            font-size: 36px!important;
-            margin-top: 10px!important;
-          }
-          .footer .media_row{
-            flex-direction: column-reverse;
-          }
-          .footer .media_1{
-            margin-top: 30px;
-          }
-          .footer .media_2{
-            align-items: center;
-          }
-          .footer .media_2 .p1{
-            margin-top: 30px;
-          }
-          .text-box-one h1{
-            font-size: 40px!important;
-          }
-          .text-box-one p{
-            font-size: 18px!important;
-          }
-          .text-box-one button{
-            padding: 9px 23px!important;
-            font-size: 18px!important;
-          }
-          .text-box-one li{
-            margin-left: auto!important;
-            margin-right: auto!important;
-            display: block!important;
-          }
-          .text-box-one .list-one{
-            margin-bottom: 14px!important;
-          }
+      @media screen and (max-width:560px){
+      
+        .footer-two .footer-two-image img{
+            width: 90px!important;
+            height: 45px!important;     
+        }
+        .footer-two .footer-two-image a {
+            font-size: 15px;
+        }
+        .footer-two .footer-section-one p{
+            font-size: 29px !important;
+            text-align:left!important;
+        }
+        .footer-two .footer-section-two{
+            flex-direction: column-reverse!important;
+            justify-content: flex-start!important;
+            align-items: flex-start!important;
+        }
+        .footer-two .section-border{
+          padding-bottom: 20px;
+        }
+        .text-box-one h1{
+          font-size: 46px;
+          text-align: left!important;
+          margin-left: 20px;
+        }
+        .text-box-one p{
+          font-size: 16px;
+          text-align: left!important;
+          margin-left: 20px;
+        }
+        .text-box-one button{
+          padding: 5px 17px!important;
+          font-size: 15px!important;
+        }
+        .text-box-one li{
+          margin-left: auto!important;
+          margin-right: auto!important;
+          display: block!important;
+        }
+        .text-box-one .list-one{
+          margin-bottom: 14px!important;
+        }
       }
 
-      @media screen and (max-width:991px) and (min-width:669px) {
-        .footer .media_row{
-          display: flex!important;
-          flex-direction: column-reverse!important;
-          justify-content: center!important;
-          align-items: center!important;
+      @media screen and (max-width:560px){
+        .section-link p {
+          font-size: 14px!important;
         }
-        .footer .media_2{
-          align-items: center!important;
+        .footer-two-image .icon-section{
+          flex-direction: row;
+          display: flex;
         }
       }

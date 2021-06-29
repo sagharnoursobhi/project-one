@@ -97,20 +97,52 @@
           display: flex!important;
           flex-direction: column!important;
           align-items: flex-end!important;
-          justify-content: flex-end!important;
+          justify-content:center!important;
           -webkit-transform: translate3d(100%, 0, 0);
           transform: translate3d(100%, 0, 0);
-        -webkit-transition: 0.3s;
-        width: 256px;
-        height: 370.87px;        
+          -webkit-transition: 0.3s;
+          width: 300px!important;
+          height: 506.87px!important;        
 
       }
-      .nav-wrapper .menu li{
-          display: block;
-          margin-top: 20px;
-          padding: 0;
-          padding-bottom: 20px;
+      .nav-wrapper .menu li.list2{
+        display: block;
+        margin-top: 13px!important;
+        padding: 0;
+        padding-bottom: 10px!important;
+        margin-right: 50px;
+        padding-top: 10px;
       }
+      .nav-wrapper .menu li.list1{
+        display: block;
+        margin-top: 13px!important;
+        padding: 0;
+        padding-bottom: 20px!important;
+        margin-right: 50px;
+        border-bottom: 0.5px solid rgba(0, 66, 111, 0.3)!important;
+        padding-left: 154px!important;
+      }
+      .nav-wrapper .menu li.list3{
+        display: block;
+        margin-top: 13px!important;
+        padding: 0;
+        padding-bottom: 20px!important;
+        margin-right: 50px;
+        padding-top: 20px;
+        padding-left: 130px!important;
+        border-bottom: 0.5px solid rgba(0, 66, 111, 0.3)!important;
+        border-top: 0.5px solid rgba(0, 66, 111, 0.3)!important;
+    }
+    .nav-wrapper .menu li.list4{
+        display: block;
+        margin-top: 13px;
+        padding: 0;
+        margin-right: 50px!important;
+        padding-top: 10px!important;
+        border-bottom: 0.5px solid rgba(0, 66, 111, 0.3)!important;
+        padding-left: 130px!important;
+        padding-bottom: 20px!important;
+    }
 
       nav.nav-wrapper ul li a{
           font-size: 18px;

@@ -92,6 +92,12 @@
         color: rgba(0, 0, 0, 0.5) !important;
         padding-left: 5px !important;
       }
+      
+    @media only screen and (max-width:360px){
+        .modal-window-second{
+            width: 319px!important;
+            }
+    }
 
     
       
