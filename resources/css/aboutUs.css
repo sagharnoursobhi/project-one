@@ -364,3 +364,11 @@
                 margin-top: 458px!important;
             }
         }
+
+        @media only screen and (max-width:411px){
+            .section-one .section-one-img{
+                height: 337px!important;
+                width: 280px!important;
+                top: 360px!important;
+            }
+        }

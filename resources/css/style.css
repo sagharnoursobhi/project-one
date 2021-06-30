@@ -368,10 +368,12 @@
         margin-bottom: 60px;
         padding-top: 29px;
         border-top: 0.5px solid black;
+        border-left: 0;
+        border-bottom: 0;
+        border-right: 0;
         background-size: cover;
         background-repeat: no-repeat;
-        border-image-source: linear-gradient(90deg, #0067ad 0%, #02375b 94.96%);
-        border-image-slice: 1;
+        border-color: linear-gradient(90deg, #0067ad 0%, #02375b 94.96%); 
     }
 
     .section-three a{
@@ -842,5 +844,10 @@
             margin-bottom: 37px!important;
         }
     }
-        
+       
+    @media only screen and (max-width:411px){
+        .modal-window-second{
+            width: 388.59px!important;
+            }
+    }
       
