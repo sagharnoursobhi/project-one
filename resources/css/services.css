@@ -367,3 +367,15 @@
             display: flex;
           }
     }
+    /* @media only screen and (max-width:411px){
+        .modal-window-second{
+            width: 351.59px!important;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media only screen and (max-width:320px){
+        .modal-window-second{
+            width: 294.59px!important; 
+        }
+    } */
