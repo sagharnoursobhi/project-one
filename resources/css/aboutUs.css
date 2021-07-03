@@ -258,9 +258,9 @@
                 top: 121px;
         }
         .section-one-content {
-            padding-right: 225px;
-            padding-left: 20px;
-            padding-top: 20px;
+            padding-right: 300px!important;
+            padding-left: 13px!important;
+            padding-top: 3px;
         }
 
         .section-one h3 {
@@ -285,7 +285,9 @@
                     height: 954px;
             }
             .section-one-content {
-                padding-right: 400px;
+                padding-right: 520px!important;
+                padding-left: 14px!important;
+                padding-top: 3px!important;
             }
         }
         @media only screen and (max-width:768px){
@@ -384,7 +386,7 @@
                     margin-top: 10px!important;
                 }
                .section-one .h3-media-second {
-                    margin-top: 415px!important;
+                    margin-top: 428px!important;
                 }
                 .custom-carousel {
                     height: 721px!important;
