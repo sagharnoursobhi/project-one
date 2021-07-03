@@ -92,6 +92,14 @@
         color: rgba(0, 0, 0, 0.5) !important;
         padding-left: 5px !important;
       }
+
+      @media only screen and (max-device-width:414px){
+        .modal-window-second{
+            width: 296.59px!important;
+            margin-left: auto;
+            margin-right: auto;
+            }
+    }
       
       @media only screen and (max-width:320px){
         .modal-window-second {
@@ -107,12 +115,27 @@
                 width: 96%!important;
             }
     }
-    @media only screen and (max-device-width:414px){
+
+    @media only screen and (max-width:280px){
         .modal-window-second{
-            width: 296.59px!important;
-            margin-left: auto;
-            margin-right: auto;
-            }
+            height: 364.74px!important;
+            width: 261.59px!important;
+        }
+        input{
+            margin-top: 12px!important;
+        }
+        .modal-window-second .my__btn{
+            width: 93.494484px!important;
+        }
+        .modal-window-first .modal-body{
+            padding: 14px;
+        }
+        .modal-window-first h3 {
+            font-size: 21px!important;
+        }
+        .modal-window-first h5 {
+            font-size: 17px!important;
+        }
     }
 
     

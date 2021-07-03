@@ -222,7 +222,7 @@
         max-width: 100%;
         max-height: 100%;
         width: 142px;
-        height: 100px;
+        height: 83px;
         margin-top: 96px;
         margin-bottom: 50px;
     }
@@ -567,11 +567,11 @@
       .owl-dot{
         height: 15px;
         width: 45px;
-        border: 2px solid #0072bc!important;
         border-radius: 25px;
         outline: none;
         margin: 0 5px;
         transition: all 0.3 ease;
+        background: rgba(255, 255, 255, 0.5)!important;
       }
       .owl-dots{
         display: flex;
@@ -641,9 +641,9 @@
        background-image: url('../imgs/SecondMobile.jpg')!important;
        background-position-x: 1px;
      }
-    .owl-dot{
-        height: 22px!important;
-        width: 22px!important;
+     .owl-dot {
+        height: 16px!important;
+        width: 16px!important;
     }
     .owl-dots {
         margin-bottom: 37px!important;
@@ -683,10 +683,7 @@
         .section-link p {
             font-size: 14px!important;
           }
-          .footer-two-image .icon-section{
-            flex-direction: row;
-            display: flex;
-          }
+         
     }
 
     @media only screen and (max-width:560px){
@@ -798,9 +795,19 @@
             width: 56px;
             height: 20px;
         }
+        .footer-two-image{
+            align-items: flex-start!important;
+        }
         .footer-two .footer-two-image img{
             width: 90px!important;
             height: 45px!important;     
+        }
+        .footer-two-image .icon-section{
+            flex-direction: row;
+            display: flex;
+          }
+        .footer-two-image .icon-section .first-icon{
+            margin-left: 0!important;
         }
         .footer-two .footer-two-image a {
             font-size: 15px;
@@ -845,4 +852,29 @@
         }
     }
     
+    @media only screen and (max-width:280px){
+        .hero-text-box h1 {
+            font-size: 46px;
+            margin-left: 5px;
+        }
+        .hero-text-box p{
+            font-size: 16px;
+        }
+        .bottom-nav .btn-head {
+            font-size: 13px;
+            padding: 6px 17px;
+        }
+        .arrow-footer p {
+            font-size: 12px;
+        }
+        .arrow-footer .first-link {
+            font-size: 12px;
+        }
+        .owl-dot {
+            height: 19px!important;
+            width: 19px!important;
+        }
+    }
+   
+
       
