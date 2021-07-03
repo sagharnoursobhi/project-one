@@ -246,7 +246,7 @@
             padding-left: 56px!important;
         }
 
-    }
+    } 
 
     @media only screen and (max-width:1000px){
         .section-one .section-one-img {
@@ -272,22 +272,20 @@
         .custom-carousel{
             height: 562px;
         }
-    }
+    } 
 
 
-        @media only screen and (max-width:900px) and (min-width:801px){
-            .section-one .section-one-img{
-                height: 464px;
-                width: 330px;
-                top: 186px;
+        @media only screen and (max-width:990px){
+            .section-one .section-one-img {
+                height: 547px!important;
+                width: 383px!important;
+                top: 180px!important;
             }
             .custom-carousel {
-                    height: 954px;
+                height: 954px;
             }
             .section-one-content {
                 padding-right: 520px!important;
-                padding-left: 14px!important;
-                padding-top: 3px!important;
             }
         }
         @media only screen and (max-width:768px){
@@ -351,17 +349,17 @@
             .footer-two .section-border{
             padding-bottom: 20px;
             }
-            .section-one-img {
+            .section-one .section-one-img {
                 height: 367px!important;
-                width: 296px!important;
-                top: 276px!important;
+                width: 283px!important;
+                top: 294px!important;
             }
-            .h3-media-second{
-                margin-top: 350px!important;
+            .h3-media-second {
+                margin-top: 386px!important;
             }
-            .section-one-content{
-                padding-top: 0px;
-                padding-right: 87px;
+            .section-one-content {
+                padding-right: 166px!important;
+                padding-left: 12px!important;
             }
             .owl-dots button {
                 width: 22px!important;
@@ -443,6 +441,14 @@
                     padding-right: 23px;
                 }     
                 
+            }
+            @media only screen and (max-width:320px){
+                .section-one .section-one-img {
+                    top: 313px!important;
+                    height: 345px!important;
+                    width: 246px!important;
+                
+                }
             }
 
             @media only screen and (max-width:280px){
