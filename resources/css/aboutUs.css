@@ -411,6 +411,14 @@
 
             }
             @media only screen and (max-width:360px){
+                .menu-trigger-blue{
+                    width: 27px!important;
+                    height: 27px!important;
+                }
+                .menu-trigger-white{
+                    width: 27px!important;
+                    height: 27px!important;
+                }
                 .section-one .section-one-img {
                     top: 287px!important;
                 }

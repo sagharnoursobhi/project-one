@@ -112,6 +112,14 @@
     
 
       @media screen and (max-width:560px){
+        .menu-trigger-blue{
+          width: 27px!important;
+          height: 27px!important;
+      }
+      .menu-trigger-white{
+          width: 27px!important;
+          height: 27px!important;
+      }
       
         .footer-two .footer-two-image img{
             width: 90px!important;

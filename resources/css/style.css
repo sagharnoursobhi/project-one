@@ -188,10 +188,9 @@
         text-align: center;
         padding: 9px 36px;
         background: #F8F8F8; 
-        border: solid #BDBDBD 1px; 
-        box-shadow: 3px 16px 27px rgba(0, 0, 0, 0.5)  ; 
-        -webkit-box-shadow: 3px 16px 27px rgba(0, 0, 0, 0.5)  ; 
-        -moz-box-shadow: 3px 16px 27px rgba(0, 0, 0, 0.5)  ; 
+        box-shadow: -2px 17px 26px 2px rgba(128,128,128,0.19);
+-webkit-box-shadow: -2px 17px 26px 2px rgba(128,128,128,0.19);
+-moz-box-shadow: -2px 17px 26px 2px rgba(128,128,128,0.19);
     }
 
     /* dark blue div of the landing page*/
@@ -617,6 +616,14 @@
 
 
      @media only screen and (max-width:360px) {
+        .menu-trigger-blue{
+            width: 27px!important;
+            height: 27px!important;
+        }
+        .menu-trigger-white{
+            width: 27px!important;
+            height: 27px!important;
+        }
         .section-one .section-text{
             padding-left: 13px!important;
             padding-right: 13px!important;
