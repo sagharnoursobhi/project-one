@@ -1,85 +1,183 @@
-.flex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .text-black{
-    color: black;
-  }
-  nav{
-    padding: 0 2rem;
-    position: relative;
-    justify-content: space-between;
-    min-height: 20vh;
-    height: 0rem;
-    overflow-y: hidden;
-    transition: height 1s cubic-bezier(0.44, 0.02, 0.47, 0.96);
-}
-  .nav-a img{
-    width: 91px;
+
+      html , body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+      }
+
+      img {
+      max-width: 100%;
+      }
+
+
+      *{
+          box-sizing: border-box;
+          outline: 0;
+          -webkit-box-sizing: border-box;
+      }
+      /*Navigation Bar + header style*/
+      header{
+          width: 100%;
+          position: relative;
+      }
+        
+
+  .nav-wrapper{
+      max-width: 1200px;
+      position: relative;
+      margin: 0 auto;
+      padding: 7px 0;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
   }
 
-  nav .social{
-    padding: 1.4rem 0;
+  nav ul li{
+      display: inline-block;
+      padding: 0 10px;
+      margin-bottom: 0;
+  }
+  nav ul li a{
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      cursor: pointer;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 3px;
+      transition: 100ms ease;
+      font-family: Gotham Bold;
+      font-style: normal;
+      font-weight: bold;
   }
 
-  nav .social i{
-    padding: 0.2rem;
+  nav .logo img{
+      max-width: 100px!important;
+  }
+  .menu-triger{
+      display: none;
   }
 
-  nav .nav-brand a{
-    font-size: 1.6rem;
-    display: block;
-    padding: 1rem 0;
-  }
-
-  a{
-    text-decoration: none;
-  }
-
-  nav .nav-items{
-    list-style-type:none;
-    margin: 0;
-  }
-  nav .nav-items .nav-a{
-    padding: 1.3rem 1rem;
-    font-size: 1.1rem;
-  }
-
-  nav .toggle-collapse{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    cursor: pointer;
-    display: none;
-  }
-
-  nav .toggle-collapse .collapse-icons{
-    display: flex;
-    justify-content: flex-end;
-    padding: 1.4rem 4rem;
-  }
-
-  nav .toggle-collapse .collapse-icons i{
-    font-size: 1.4rem;
-  }
-
-  /*css for making hamburger menu clickable*/
-  .collapse{
-    height: 30rem;
-  }
-  /*end*/
-  @media only screen and (max-width:800px) {
-    nav .nav-items{
-      flex-direction: column;
+  /*responsive navbar*/
+  @media only screen and (max-width : 798px){
+      .nav-wrapper{
+        justify-content: end;
+      }
+ 
+      .menu-trigger-white{
+          background: url(../imgs/menu.png) no-repeat center/cover!important;
+          display: block;
+          /* z-index:10; */
+          position: absolute;
+          right:20px;
+          top: 15px;
+          width: 35px;
+          height: 35px;
+      }
+      .menu-trigger-blue{
+        background: url(../imgs/Vector.blue.png) no-repeat center/cover!important;
+        display: none;
+        z-index:30;
+        position: absolute;
+        right:20px;
+        top: 15px;
+        width: 35px;
+        height: 35px;
+        background: rgba(0, 0, 0, 0.301);
     }
-    nav{
-      flex-direction: column!important;
-      display: block!important;
+      .menu{
+          position: absolute!important;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          max-width: 300px;
+          transform: translate3d(100% , 0 , 0);
+          z-index: 30;
+          background: #FFFFFF;
+          border-bottom-left-radius: 93px;
+          display: flex!important;
+          flex-direction: column!important;
+          align-items: flex-end!important;
+          justify-content:center!important;
+          -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+          -webkit-transition: 0.3s;
+          width: 300px!important;
+          height: 506.87px!important;        
+
+      }
+      .nav-wrapper .menu li.list2{
+        display: block;
+        margin-top: 13px!important;
+        padding: 0;
+        padding-bottom: 10px!important;
+        margin-right: 50px;
+        padding-top: 10px;
+      }
+      .nav-wrapper .menu li.list1{
+        display: block;
+        margin-top: 13px!important;
+        padding: 0;
+        padding-bottom: 20px!important;
+        margin-right: 50px;
+        border-bottom: 0.5px solid rgba(0, 66, 111, 0.3)!important;
+        padding-left: 154px!important;
+      }
+      .nav-wrapper .menu li.list3{
+        display: block;
+        margin-top: 13px!important;
+        padding: 0;
+        padding-bottom: 20px!important;
+        margin-right: 50px;
+        padding-top: 20px;
+        padding-left: 130px!important;
+        border-bottom: 0.5px solid rgba(0, 66, 111, 0.3)!important;
+        border-top: 0.5px solid rgba(0, 66, 111, 0.3)!important;
     }
-    nav .toggle-collapse{
-      display: initial;
+    .nav-wrapper .menu li.list4{
+        display: block;
+        margin-top: 13px;
+        padding: 0;
+        margin-right: 50px!important;
+        padding-top: 10px!important;
+        border-bottom: 0.5px solid rgba(0, 66, 111, 0.3)!important;
+        padding-left: 130px!important;
+        padding-bottom: 20px!important;
     }
+
+      nav.nav-wrapper ul li a{
+          font-size: 18px;
+          line-height: 23px;
+          color: black;
+          font-family: Gotham;
+      }
+
+      nav.nav-wrapper ul li a:hover{
+          border-color: transparent;
+      }
+      body.menu-is-active .menu{
+          transform: translate3d(0 , 0 , 0);
+          padding: 0 15px;
+      }
+        body.menu-is-active .menu-trigger-white {
+          display: none;
+        }
+        body.menu-is-active .menu-trigger-blue{
+            display: block;
+        }
+         /*blue-menu*/
+        body.firstMenu-is-active .menu-trigger-blue {
+            display: none;
+        }
+        body.firstMenu-is-active .menu-trigger-white {
+            display: block;
+        }
+        body.firstMenu-is-active .menu{
+            transform: translate3d(100% , 0 , 0);
+            padding: 0 15px;
+        }
   }
 
   .bottom-nav button:link {
@@ -101,18 +199,5 @@
       transform:color 0.2s, color 0.2s; ;
   }
 
-  
-  .nav-a a:link , a:visited{
-      font-size: 75%;
-      text-decoration: none;
-      color: #fff;
-      transition: 300ms ease-out;
-      font-weight: 300;
-  }
 
-  /*.nav-a a:{
-      font-size: 75%;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-  }*/
+      
