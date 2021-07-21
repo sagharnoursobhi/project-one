@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="aphome.se" id="5c1fddd4-5001-4ef4-8437-1cc4b38eee88" port="22" nameFormat="DESCRIPTIVE" username="aphome" />
+    </configs>
+  </component>
+</project>
