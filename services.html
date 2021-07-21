@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="plugins/fontawesome-free-5.15.3-web 2/css/all.min.css">
     <link rel="stylesheet" href="plugins/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="plugins/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
     <link rel="stylesheet" href="resources/css/navbar.css">
     <link rel="stylesheet" href="resources/css/modal.css">
     <link rel="stylesheet" href="resources/css/style.css">
@@ -72,14 +73,16 @@
           </div>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-6 justify-content-center d-flex align-items-center">
-          <div class="d-flex align-items-start flex-column justify-content-center custom_form">
-            <label for="">Kontakta oss</label>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Phone">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Hello.I am interested in...">
-            <button>Skicka</button>
-          </div>
+          <form id="contactForm">
+            <div class="d-flex align-items-start flex-column justify-content-center custom_form">
+              <label>Kontakta oss</label>
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="text"  name="phone" placeholder="Phone" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <input type="text" name="message" placeholder="Hello.I am interested in..." required>
+              <button type="submit">Skicka</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -285,25 +288,29 @@
   <div class="modal border-2 border-white" id="modal-window-two" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content modal-window-second">
-          <div class="modal-header">
-            <h5 class="modal-title">Maila oss</h5>
-            <button type="button" class="btn-close text-white" id="second-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <input class="input__one" type="text" placeholder="Name">
-            <input class="input__one" type="text" placeholder="Phone">
-            <input class="input__one" type="text" placeholder="Email">
-            <input class="input__two" type="text" placeholder="Hello, I am interested in…">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="my__btn" data-bs-dismiss="modal">Close</button>
-          </div>
+          <form id="modalForm">
+            <div class="modal-header">
+              <h5 class="modal-title">Maila oss</h5>
+              <button type="button" class="btn-close text-white" id="second-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <input class="input__one" name="name" type="text" required placeholder="Name">
+              <input class="input__one" name="phone" type="text" required placeholder="Phone">
+              <input class="input__one" name="email" type="email" required placeholder="Email">
+              <input class="input__two" name="message" type="text" required placeholder="Hello, I am interested in…">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="my__btn" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="my__btn">Send</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   <!---Second-modal-window end-->
 
     <script src="plugins/jquery/jquery-3.5.1.min.js"></script>
+    <script src="plugins/toastr/toastr.min.js"></script>
     <script src="plugins/fontawesome-free-5.15.3-web 2/js/all.min.js"></script>
     <script src="plugins/bootstrap-5.0.1-dist/css/bootstrap.min.css"></script>
     <script src="plugins/bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
